@@ -1,0 +1,9 @@
+@media screen and (max-width: 425px) {
+    .nav_toggle{
+        display: block;
+        /* margin-right: 20px; */
+    }
+    .drop_down_nav{
+        display: none;
+    }
+}

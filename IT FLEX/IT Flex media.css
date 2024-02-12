@@ -1,0 +1,161 @@
+@media (max-width: 1024px) {
+    .portfolio_head h3{
+        font-size: 43px;
+    }
+    .pricing_plans{
+        /* width: 20%; */
+    }
+    .pricing_plans_main{
+
+    }
+    .testimonial_image{
+        width: 22%;
+        margin-left: calc(50% - 11%);
+    }
+}
+
+
+@media (max-width: 768px){
+    .on_top{
+        position: absolute;
+        bottom: 0;
+        right: 50px;
+        height: 40px;
+        width: 40px;
+    }
+    nav .sub{
+        display: none;
+    }
+    .menu_bar{
+        display: block;
+        margin-left: -71%;
+    }
+    nav{
+        padding: 0px 30px;
+        background-color: rgb(0, 175, 228);;;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+    .services_button{
+        display: block;
+        height: 20vh;
+    }
+    .figures_main_section{
+        padding: 50px 0px;
+    }
+    .figures_item_1{
+        margin: 20px 0px;
+    }
+    .portfolio_button{
+        
+        display: flex;
+        justify-content: start;
+        height: 20vh;
+    }
+    .portfolio_btn{
+        margin-top: 20px;
+    }
+    .portfolio_listing ul{
+        margin-top: 40px;
+    }
+    .pricing_plans{
+        margin-top: 20px;
+    }
+    .testimonial_image{
+        width: 20%;
+        margin-left: calc(50% - 10%);
+    }
+    .testimonials_main{
+        width: 70%;
+    }
+    .links_footer_items{
+        margin-top: 30px;
+    }
+    .service1_main_box{
+        /* width: 48%; */
+        /* display: flex;
+        flex-direction: column;
+        margin: 0;  
+    } */
+    }
+}
+
+
+
+@media (max-width: 425px) {
+    .nav_toggle{
+        display: block;
+        margin-right: 20px;
+    }
+    .nav_list{
+        display: none;
+    }
+    .menu_bar{
+        display: block;
+        margin-left: -51%;
+    }
+    .start_button button{
+        width: 50%;
+    }
+    .services_button button{
+        width: 60%;
+    }
+    .service1_main_box{
+        margin-top: 20px;
+    }
+    .about_us_head_content{
+        margin-top: 30px;
+    }
+    .about_item_1{
+        margin: 14px 0px;
+    }
+    .about_us_items .row{
+        margin: 0;
+    }
+    .button_and_sign button{
+        width: 60%;
+    }
+    .founder_sign img{
+        width: 80%;
+        padding-left: 20px;
+    }
+    .about_us_image img{
+        margin-top: 20px;
+    }
+
+    .portfolio_listing ul li{
+        margin: 10px;
+    }
+    .portfolio_listing ul li a{
+        font-size: 15px;
+    }
+    .testimonials_main{
+        width: 90%;
+    }
+    .carousel_main{
+        padding-bottom: 50%;
+    }
+}
+
+@media (max-width: 320px) {
+    nav{
+        padding: 0px 10px;
+    }
+    .menu_bar{
+        margin-left: -38%;
+    }
+    .button_and_sign button{
+        width: 60%;
+    }
+    .portfolio_listing{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .experts_info .testimonial_details{
+        line-height: 10px;
+    }
+
+}

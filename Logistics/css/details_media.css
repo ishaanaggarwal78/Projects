@@ -1,0 +1,72 @@
+
+/* ========================================== SERVICE DETAILS =========================================== */
+
+@media  (max-width: 1024px) {
+    .main_info{
+        width: 60%;
+        padding-top: 60px;
+    }
+    .menu_bar{
+        display: block;
+    }
+    .main_ul{
+        display: none;
+    }
+    .main_info{
+        width: 40%;
+    }
+    .sidebar{
+        position: fixed;
+        top: 0;
+    }
+    .main_section{
+        height: 60vh;
+    }
+    .sections_switch{
+        margin-top: 56px;
+        height: 23%;
+    }
+}
+
+@media  (max-width: 768px) {
+    .main_info{
+        width: 100%;
+    }
+    .sections_switch{
+        margin-top: 60px;
+    }
+
+}
+
+@media  (max-width: 425px) {
+    .main_info{
+        width: 100%;
+    }
+    nav{
+        padding: 0px 40px;
+    }
+    nav.sticky{
+        padding: 0px 40px;
+    }
+    .main_info{
+        width: 100%;
+    }
+    .main_section{
+        /* height: 70vh;
+        padding-top: 50px; */
+    }
+    .sections_switch{
+        margin-top: 60px;
+        height: 14%;
+    }
+    .storage_services{
+        margin-top: 15%;
+    }
+    .footer_copyrights{
+        font-size: 13px;
+    }
+}
+
+@media  (max-width: 320px) {
+    
+}

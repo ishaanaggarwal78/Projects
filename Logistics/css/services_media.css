@@ -1,0 +1,138 @@
+/* ========================================== SERVICES =========================================== */
+
+@media  (max-width: 1024px) {
+    .main_info{
+        width: 60%;
+        padding-top: 60px;
+    }
+    .menu_bar{
+        display: block;
+    }
+    .main_ul{
+        display: none;
+    }
+    .main_info{
+        width: 40%;
+    }
+    .play_outer{
+        position: absolute;
+        top: 22%;
+        left: 42%;
+    }
+    .sidebar{
+        position: fixed;
+        top: 0;
+    }
+    .main_section{
+        height: 60vh;
+    }
+    .sections_switch{
+        margin-top: 56px;
+        height: 23%;
+    }
+
+}
+
+@media  (max-width: 768px) {
+    .services_details_box{
+        margin: 20px 0px;
+    }   
+    .our_services{
+        margin-top: 50px;
+    }
+    .services_main{
+        margin-top: 10%;
+    }
+    .main_info{
+        width: 100%;
+    }
+    .sections_switch{
+        margin-top: 60px;
+    }
+    
+    .testimonial_image{
+        width: 14%;
+        margin-left: calc(50% - 7%);
+    }
+    .experts_info .testimonial_details{
+        line-height: 25px;
+        font-size: 18px;
+    }
+    .main_section{
+        /* height: 70vh; */
+        /* padding-top: 50px; */
+    }
+
+}
+
+@media  (max-width: 425px) {
+    .main_info{
+        width: 100%;
+    }
+    nav{
+        padding: 0px 40px;
+    }
+    nav.sticky{
+        padding: 0px 40px;
+    }
+    .main_info{
+        width: 100%;
+    }
+    .main_section{
+        /* height: 70vh;
+        padding-top: 50px; */
+    }
+    .sections_switch{
+        margin-top: 60px;
+        height: 14%;
+    }
+    .services_main{
+        margin-top: 25%;
+    }
+    .services_heading h2::before{
+        content: "";
+        position: absolute;
+        top: 55px;
+        left: 43%;
+        background-color: var(--secondary-color);
+        width: 15%;
+        height: 3px;
+    }
+    .faq_main .services_heading h2::before{
+        content: "";
+        position: absolute;
+        top: 60px;
+        left: 43%;
+        background-color: var(--secondary-color);
+        width: 15%;
+        height: 3px;
+    }
+    .faq_main .services_heading{
+        text-align: center;
+    }
+    .faq_accordion{
+        width: 90%;
+        margin-left: calc(50% - 45%);
+    }
+    .testimonial_image{
+        width: 20%;
+        margin-left: calc(50% - 10%);
+    }
+    .experts_info .testimonial_details{
+        line-height: 25px;
+        font-size: 15px;
+    }
+    .footer_copyrights{
+        font-size: 13px;
+    }
+}
+
+@media  (max-width: 320px) {
+    .carousel_main{
+        padding-bottom: 60px;
+    }
+    .testimonial_image{
+        width: 30%;
+        margin-left: calc(50% - 15%);
+    }
+}

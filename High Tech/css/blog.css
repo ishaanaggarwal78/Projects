@@ -1,0 +1,592 @@
+:root{
+    --primary-color: #26d48c;
+    --secondary-color: #1842b6;;
+    --padding: 0px 70px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.button_styling{
+    height: 58px;
+    margin: 0px 10px;
+    width: 25%;
+    border: none;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: black;
+    border-radius: 50px;
+}
+.span_styling{
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+.heading_styling{
+    font-weight: 700;
+}
+body{
+    font-family: "Inter",sans-serif;
+    position: relative;
+}
+section .sections_heading{
+    padding-bottom: 2%;
+    text-align: center;
+}
+.on_top a{
+    text-decoration: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-color);
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    z-index: 999;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.on_top a i{
+    color: white;
+}
+.header_main{
+    position: relative;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 70px;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+    height: 50px;
+}
+.header_main i{
+    color: var(--primary-color);
+    padding-right: 5px;
+}
+.header_main span{
+    color: grey;
+    padding-right: 15px;
+}
+.header_main a{
+    text-decoration: none;
+}
+.header_main .marquee_text{
+    width: 45%;
+}
+.header_main .marquee_text marquee{
+    color: var(--primary-color);
+}
+.social_icons_header{
+    display: flex;
+    gap: 10px;
+}
+.social_icons_header .icons i{
+    background-color: white;
+    font-size: 18px;
+    padding-left: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    border-radius: 100%;
+    height: 36px;
+    width: 36px;
+}
+
+/* ================================ NAVBAR ===================================== */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    height: 70px;
+    width: 100%;
+    padding: var(--padding);
+    z-index: 999;
+}
+nav .logo h1{
+    font-weight: 800;
+    color: white;
+}
+nav .logo span{
+    color: var(--primary-color);
+}
+nav .main_ul{
+    padding: 0;
+    margin-top: 12px;
+    position: relative;
+}
+.sub_ul{
+    position: absolute;
+    top: 40px;
+    border-radius: 10px;
+    width: 100px;
+    padding: 0;
+    background-color: white;
+    padding: 6px 0px;
+    width: 30%;
+    display: none;
+    z-index: 10;
+}
+nav .main_ul li:nth-child(5):hover .sub_ul{
+    display: block;
+}
+.main_ul .sub_ul li{
+    line-height: 40px;
+    width: 100%;
+    margin: 0;
+}
+.main_ul .sub_ul a{
+    display: block;
+    width: 100%;
+    color: black;
+    padding: 3px 20px;
+    font-size: 16px;
+}
+.main_ul .sub_ul a:hover{
+    background-color: rgb(204, 204, 204);
+    color: black;
+}
+nav .main_ul li{
+    display: inline-block;
+    margin: 0px 6px;
+}
+nav .main_ul li a i{
+    font-size: 14px;
+}
+nav .main_ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 0px;
+    font-weight: 600;
+    font-size: 20px;
+    transition: all ease-in-out 0.2s;
+}
+nav .main_ul li a:hover{
+    color: var(--primary-color);
+    transition: all ease-in-out 0.2s;
+}
+nav .nav_contact{
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.chat_icon{
+    position: absolute;
+    top: -5px;
+    left: 21px;
+    height: 18px;
+    width: 18px;
+    color: var(--primary-color);
+}
+.nav_contact .chat_icon i{
+    font-size: 20px;
+}
+nav .nav_contact .call_button > i{
+    font-size: 35px;
+}
+nav .nav_contact .call_button{
+    animation: call 0.5s linear infinite forwards alternate;
+    animation: call2 0.1s linear infinite forwards alternate;
+    cursor: pointer;
+}
+@keyframes call {
+    100%{
+        transform: scale(1.2);
+    }
+}
+@keyframes call2 {
+    100%{
+        transform: rotate(7deg) rotate(-14deg);
+    }
+}
+nav .nav_contact .search_icon{
+    padding-left: 20px;
+    border-left: 1px solid white;
+    margin-left: 10px;
+    height: 50px;
+    padding-top: 6px;
+    font-size: 35px;
+}
+.nav_contact .contact_number{
+    line-height: 10px;
+    padding: 0px 20px;
+    padding-top: 10px;
+    font-weight: 500;
+}
+.nav_contact .contact_number p:nth-child(1){
+    color: grey;
+}
+.nav_contact .contact_number p:nth-child(2){
+    color: var(--primary-color);
+}
+.menu_bar{
+    display: none;
+    position: relative;
+    color: white;
+    border: 1px solid grey;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.topbar_main{
+    /* position: absolute;
+    top: 22%; */
+    height: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    /* z-index: 999; */
+    /* margin-top: -30%; */
+    transition: all ease-in-out 0.6s;
+    display: none;
+}
+.topbar_main .top_ul li{
+    list-style: none;;
+}
+.topbar_main .top_ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 42px;
+    transition: all ease-in-out 0.2s;
+}
+.topbar_main .top_ul li a:hover{
+    color: var(--primary-color);
+    transition: all ease-in-out 0.2s;
+}
+.topbar_main .top_ul .dropdown_ul{
+    /* position: absolute;
+    top: 40px; */
+    border-radius: 10px;
+    width: 100px;
+    background-color: white;
+    padding: 6px 0px;
+    width: 90%;
+    display: none;
+    z-index: 10;
+}
+.topbar_main .top_ul .dropdown_ul a{
+    color: black;
+    display: block;
+    padding: 5px 20px;
+}
+.topbar_main .top_ul .dropdown_ul a:hover{
+    background-color: rgb(204, 204, 204);
+    color: black;
+}
+.topbar_main .top_ul li:nth-child(5):hover .dropdown_ul{
+    display: block;
+}
+.menu{
+    height: 50vh;
+    transition: all ease-in-out 0.6s;
+}
+.dropdown_list{
+    display: block;
+}
+
+/* ================================ MAIN SECTION ====================================== */
+
+.main_section{
+    position: relative;
+    /* height: 40vh; */
+}
+.main_section .main_image img{
+    width: 100%;
+    /* background-position: center; */
+    /* min-height: 400px; */
+    height: 40vh;
+    object-fit: cover;
+}
+.main_section .main_image{
+    position: relative;
+}
+.carousel_overlay{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 60%;
+}
+.carousel_heading{
+    position: absolute;
+    top: 18%;
+    width: 58%;
+    display: block;
+    text-align: center;
+    margin-left: calc(50% - 29%);
+}
+.carousel_heading a{
+    color: white;
+    /* font-weight: 700; */
+    font-size: 18px;
+    text-decoration: none;
+}
+.carousel_heading h1{
+    font-size: 80px;
+    color: white;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+.carousel_heading span{
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+}
+.carousel_heading .carousel_buttons{
+    margin-top: 30px;
+}
+.carousel_heading .carousel_buttons button{
+    height: 58px;
+    margin: 0px 10px;
+    width: 25%;
+    border: none;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: black;
+    border-radius: 50px;
+    transition: all ease-in-out 0.3s;
+}
+.carousel_heading .carousel_buttons button:hover{
+    background-color: var(--secondary-color);
+    transition: all ease-in-out 0.3s;
+}
+.carousel_heading .carousel_buttons button:nth-child(2){
+    transition: all ease-in-out 0.3s;
+    background-color: var(--secondary-color);
+    color: white;
+}
+.carousel_heading .carousel_buttons button:nth-child(2):hover{
+    transition: all ease-in-out 0.3s;
+    background-color: var(--primary-color);
+}
+
+
+
+
+.counter{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 22vh;
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter .counter_info{
+    display: flex;
+}
+.counter .counter_info h2{
+    color: var(--secondary-color);
+    font-size: 50px;
+    padding-right: 17px;
+    font-weight: 700;
+}
+.counter .counter_info p{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    padding-top: 10px;
+    color: white;
+}
+
+
+/* ======================================= OUR BLOG ========================================= */
+
+.blogs_blocks{
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    box-shadow: 0 0 20px 0px grey;
+}
+.blogs_blocks img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.blogs_blocks::before{
+    content: "Web Design";
+    position: absolute;
+    top: -3%;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 14px;
+    right: 6%;
+    background-color: var(--secondary-color);
+    color: white;
+    height: 55px;
+    width: 37%;
+}
+.blogs_buttons{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 0%;
+    margin-top: 50%;
+    z-index: 2;
+    width: 100%;
+    margin-left: calc(50% - 50%);
+}
+.blogs_buttons button{
+    width: 41%;
+    margin: 0;
+    color: white;
+    height: 50px;
+}
+.blogs_buttons button i{
+    padding-left: 10px;
+}
+.blogs_buttons .share_btn:hover{
+    background-color: #3dd696;
+    transition: all ease-in-out 0.3s;
+}
+.blogs_button{
+    position: relative;
+}
+.blogs_btn_hover{
+    position: absolute;
+    top: 0;
+    gap: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;    
+    transition: all ease-in-out 0.4s;
+    width: 40%;
+    height: 100%;
+    margin-left: -50%;
+}
+.blogs_buttons button:hover .blogs_btn_hover{
+    margin-left: 50%;
+    transition: all ease-in-out 0.4s;
+}
+.blogs_admin_img{
+    width: 100%;
+    background-color: red;
+    position: relative;
+}
+.blogs_admin_img img{
+    position: absolute;
+    top: -60px;
+    width: 30%;
+    margin-left: calc(50% - 15%);
+    border-radius: 100%;
+    border: 4px solid white;
+}
+.admin_details{
+    text-align: center;
+    padding-top: 16%;
+}
+.admin_details span{
+    color: var(--primary-color);
+}
+.admin_details p{
+    color: grey;
+    padding: 0px 10px;
+}
+.admin_comments{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.admin_comments a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+.admin_comments i{
+    color: var(--primary-color);
+    padding-right: 10px;
+}
+
+
+/* ==================================== FOOTER ================================ */
+
+footer{
+    color: white;
+    background-color: black;
+    padding: 4% 0px;
+    /* margin-top: 30rem; */
+}
+footer .logo h1{
+    font-weight: 800;
+    color: white;
+}
+footer .logo span{
+    color: var(--primary-color);
+}
+.footer_icons{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.footer_icons .social_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    color: var(--secondary-color);
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color: white;
+    transition: all ease-in-out 0.2s;
+}
+.footer_ul{
+    padding: 0;
+}
+.footer_ul li{
+    list-style: none;
+}
+.footer_ul li a{
+    text-decoration: none;
+    color: white;
+    line-height: 33px;
+    transition: all ease-in-out 0.2s;
+}
+.footer_ul li a i{
+    color: var(--primary-color);
+    padding-right: 10px;
+}
+.footer_ul li a:hover{
+    letter-spacing: 1px;
+    transition: all ease-in-out 0.2s;
+}
+footer h2{
+    color: var(--primary-color);
+    padding-bottom: 10px;
+}
+footer .footer_contact li{
+    padding: 10px 0px;
+    margin: 5px 0px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+footer p{
+    padding-top: 20px;
+}
+
+.footer_end{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer_end h6 a{
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 0px 2px;
+}
+
