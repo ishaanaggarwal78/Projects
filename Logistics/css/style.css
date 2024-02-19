@@ -149,12 +149,15 @@ nav .main_ul > li{
     position: absolute;
     /* top: 0px; */
     z-index: 999;
-    /* right: 0; */
-    margin-left: -125%;
-    width: 400px;
+    right: 0;
+    margin-right: -100%;
+    /* margin-left: -125%; */
+    width: 50%;
     height: 100vh;
     background-color: rgb(13, 13, 54);
     transition: ease-in-out 0.3s;
+    padding-left: 1rem;
+    padding-top: 3rem;
 }
 .cross_btn{
     position: absolute;
@@ -205,12 +208,12 @@ nav .main_ul > li{
     position: absolute;
     top: 0px;
     z-index: 999;
-    margin-left: 0;
+    margin-right: 0;
     width: 100%;
     transition: ease-in-out 0.3s;
 }
 .newclass2{
-    margin-left: 0;
+    /* margin-left: 0; */
 }
 
 
@@ -377,7 +380,7 @@ nav .main_ul > li{
 }
 .play_outer{
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 48%;
     background-color: #0d41ff70;
     height: 90px;

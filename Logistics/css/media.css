@@ -1,101 +1,215 @@
+@media (max-width:2560px) {
+    .sidebar {
+        display: none;
+    }
+
+    /* nav {
+        padding: 0 26rem;
+    }
+
+    nav.sticky {
+        padding: 0 26rem;
+    } */
+}
+
+@media (max-width:1440px) {
+    .sidebar {
+        display: none;
+    }
+
+    /* nav {
+        padding: 0 4rem;
+    }
+
+    nav.sticky {
+        padding: 0 4rem;
+    } */
+}
+
 @media (max-width: 1024px) {
+    .sidebar {
+        display: block;
+    }
     .menu_bar{
         display: block;
     }
-    .main_ul{
+    .main_ul {
         display: none;
     }
-    .main_info{
+
+    .main_info {
         width: 40%;
     }
-    .play_outer{
+
+    .play_outer {
         position: absolute;
         top: 22%;
         left: 42%;
     }
-    .sidebar{
+
+    .sidebar {
         position: fixed;
         top: 0;
     }
-    .services_offered{
+
+    .services_offered {
         padding: 0;
     }
-    .services_provide .container .row{
+
+    .services_provide .container .row {
         margin-bottom: 70px;
     }
 }
 
+/* ============================================= 991px ============================================= */
+
+@media (max-width:992px) {
+    .counter {
+        margin-left: 0;
+    }
+
+}
+
+/* ============================================= 960px ============================================= */
+
+@media (max-width:961px) {
+    .counter {
+        margin-left: 5rem;
+    }
+
+    .play_outer {
+        position: absolute;
+        top: 42%;
+        left: 45%;
+    }
+    .footer .footer_heads{
+        margin-top: 3rem;
+    }
+
+}
+
+/* ============================================= 768px ============================================= */
+
 @media (max-width: 768px) {
-    .input_box{
+    .sidebar {
+        display: block;
+    }
+
+    .input_box {
         padding: 0;
     }
-    .input_box input{
+
+    .input_box input {
         width: 79%;
     }
-    .counter{
+
+    .counter {
         display: flex;
         justify-content: center;
         margin-top: 60px;
     }
-    .main_section{
 
-    }
-    .about_us_image img{
+    .about_us_image img {
         padding-top: 20px;
     }
-    .call_us .call_info button{
+
+    .call_us .call_info {
+        width: 70%;
+    }
+
+    .call_us .call_info button {
         width: 50%;
     }
-    .pricing_plans{
+
+    .pricing_plans {
         margin-bottom: 20px;
     }
-    .experts_info .testimonial_details{
+
+    .experts_info .testimonial_details {
         line-height: 23px;
     }
+
     .main_image img {
         padding: 0;
     }
-    .testimonial_image{
+
+    .testimonial_image {
         width: 20%;
         margin-left: calc(50% - 10%);
     }
-    .play_outer{
+
+    .play_outer {
         position: absolute;
         top: 40%;
         left: 45%;
     }
-    .footer_heads{
+
+    .footer_heads {
         padding-top: 30px;
     }
+
     /* .services_para_img{
         padding-top: 0;
     } */
 }
 
-@media (max-width: 425px) {
-    .main_info{
+/* ============================================= 425px ============================================= */
+
+@media (max-width: 426px) {
+    .main_info {
         width: 100%;
     }
-    nav{
-        padding: 0px 20px;
+
+    nav {
+        padding: 0px 30px;
     }
-    .input_box{
+
+    nav.sticky {
+        padding: 0 30px !important;
+    }
+
+    .main_section {
+        padding-top: 3rem;
+    }
+
+    .main_section h1 {
+        font-size: 50px;
+    }
+
+    .input_box {
         padding: 0 10px;
     }
-    .counter{
+
+    .counter {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         width: 80%;
         margin: 10%;
     }
-    .call_us .call_info button{
+
+    .call_us .call_info button {
         width: 80%;
     }
-    .faq_main .services_heading{
+
+    .call_us .call_info {
+        width: 90%;
+    }
+
+    .faq_main .services_heading {
         text-align: center;
     }
-    .services_heading h2::before{
+
+    .faq_main .services_heading h2::before {
+        margin-top: 1rem;
+    }
+
+    .faq_accordion {
+        margin-left: 1rem;
+        width: 90%;
+    }
+
+    .services_heading h2::before {
         content: "";
         position: absolute;
         top: 55px;
@@ -104,7 +218,12 @@
         width: 15%;
         height: 3px;
     }
-    .faq_main .services_heading h2::before{
+
+    .carousel_main {
+        padding-bottom: 6rem;
+    }
+
+    .faq_main .services_heading h2::before {
         content: "";
         position: absolute;
         top: 60px;
@@ -113,67 +232,94 @@
         width: 15%;
         height: 3px;
     }
-    .testimonial_image{
+
+    .testimonial_image {
         width: 30%;
         margin-left: calc(50% - 15%);
     }
-    .play_outer{
+
+    .play_outer {
         position: absolute;
         top: 38%;
         left: 42%;
     }
-    .footer_heads{
+
+    .footer_heads {
         padding-top: 30px;
     }
-    nav.sticky{
+
+    nav.sticky {
         padding: 0px 20px;
         height: 60px;
     }
-    nav h1{
+
+    nav h1 {
         font-size: 20px;
     }
-}   
-@media (max-width: 375px) {
-    .call_main{
+}
+
+/* ============================================= 375px ============================================= */
+
+@media (max-width: 376px) {
+    .main_section h1 {
+        font-size: 40px;
+    }
+
+    .call_main {
         width: 100%;
         /* height: 600px; */
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .call_info{
+
+    .call_info {
         width: 100%;
         margin: 40px 0px;
     }
-    .play_outer{
+
+    .play_outer {
         position: absolute;
         top: 36%;
         left: 40%;
     }
 }
-@media  (max-width: 320px) {
-    .input_box{
-        height: 65px;
+
+/* ============================================= 320px ============================================= */
+
+@media (max-width: 320px) {
+    .input_box {
+        height: 60px;
     }
-    .input_box button{
-        height: 50px;
+
+    .input_box button {
+        height: 45px;
     }
-    .counter{
-      margin: 10%;
-      padding: 20px 0px;
+
+    .counter {
+        margin: 10%;
+        padding: 20px 0px;
     }
-    .play_outer{
+
+    .play_outer {
         position: absolute;
         top: 34%;
         left: 38%;
     }
-    .call_us .call_main .call_info{
+
+    .call_us .call_main .call_info {
         width: 80%;
     }
-    .footer_copyrights{
+
+    .carousel_main {
+        padding-bottom: 9rem;
+    }
+
+    .footer_copyrights {
         line-height: 10px;
     }
-    .footer_copyrights{
+
+    .footer_copyrights {
         font-size: 13px;
     }
 }
@@ -184,37 +330,44 @@
 
 /* ========================================== GET A QUOTE =========================================== */
 
-@media (max-width: 1024px)  {
-    .quote_img img{
+@media (max-width: 1024px) {
+    .quote_img img {
         height: 100vh;
     }
-    .quote_inputs input{
+
+    .quote_inputs input {
         margin-right: 20px;
     }
 }
-@media (max-width: 425px)  {
-    .quote_inputs input{
+
+@media (max-width: 425px) {
+    .quote_inputs input {
         width: 100%;
     }
-    .quote_button button{
+
+    .quote_button button {
         width: 40%;
     }
 }
-@media (max-width: 425px)  {
-    .quote_inputs input{
+
+@media (max-width: 425px) {
+    .quote_inputs input {
         width: 100%;
     }
-    .quote_button button{
+
+    .quote_button button {
         width: 50%;
     }
 }
-@media (max-width: 425px)  {
-    .quote_inputs input{
+
+@media (max-width: 425px) {
+    .quote_inputs input {
         width: 100%;
         margin-bottom: 20px;
         height: 40px;
     }
-    .details_inputs input{
+
+    .details_inputs input {
         width: 100%;
         margin-bottom: 7%;
         height: 40px;
@@ -223,14 +376,14 @@
 
 /* ========================================== SERVICE DETAILS =========================================== */
 
-@media (max-width: 768px)  {
-    .our_services{
+@media (max-width: 768px) {
+    .our_services {
         margin-top: -60px;
     }
 }
 
-@media  (max-width: 576px) {
-    .main_section .input_box{
+@media (max-width: 576px) {
+    .main_section .input_box {
         padding: 0px 10px;
     }
 }

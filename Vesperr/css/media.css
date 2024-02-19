@@ -15,6 +15,14 @@
         position: relative;
         width: 75%;
     }
+    .team_blocks .team_overlay{
+        position: absolute;
+        bottom: 35%;
+    }
+    .team_blocks:hover .team_overlay{
+        position: absolute;
+        bottom: 29%;
+    }
     .contact_details{
         width: 100%;
     }
@@ -26,6 +34,11 @@
         display: block;
     }
     .main_ul{
+        display: none;
+    }
+    .menu_bg{
+        height: 100vh;
+        width: 100%;
         display: none;
     }
     .main_heading{
@@ -46,23 +59,39 @@
         line-height: 28px;
     }
     .companies_main{
-        padding: 5rem 0;
+        padding: 6rem 0;
+        /* height: 5rem; */
+        padding-left: 13%
+    }
+    .companies_main img{
+        margin-bottom: 1rem;
     }
     .about_image{
         width: 80%;
         margin-left: calc(50% - 40%);
     }
+    .team_blocks .team_overlay{
+        position: absolute;
+        bottom: 28%;
+    }
+    .team_blocks:hover .team_overlay{
+        position: absolute;
+        bottom: 21%;
+    }
     .contact_details{
         margin: 3rem 0;
+    }
+    .testimonials .details_blocks{
+        /* margin-left: 0; */
     }
     .foooter_links{
         margin-top: 1rem;
     }
 }
 
-@media (max-width: 425px) {
+@media (min-width: 425px) {
     nav{
-        padding: 0 1rem;
+        padding: 0 2rem;
     }
     .about_us .about_image{
         width: 100%;
@@ -85,6 +114,16 @@
     .testimonials .details_blocks{
         width: 100%;
         margin-left: 5rem;
+    }
+}
+
+@media (min-width: 375px) {
+    nav{
+        padding: 2rem;
+    }
+    .about_us .about_image{
+        width: 100%;
+        margin-left: 0;
     }
 }
 

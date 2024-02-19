@@ -19,6 +19,9 @@
 </head>
 
 <body>
+    <div class="on_top">
+        <a href="#top"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
     <header>
         <!-- <div class="container"> -->
         <nav>
@@ -536,33 +539,77 @@
                     <div class="gallery">
                         <div class="buttons">
                             <button class="btn btn-default filter" data-filter="all">Show All</button>
-                            <button class="btn btn-default filter" data-filter=".pink">Pinks</button>
-                            <button class="btn btn-default filter" data-filter=".red">Reds</button>
-                            <button class="btn btn-default filter" data-filter=".green">Greens</button>
-                            <button class="btn btn-default filter" data-filter=".blue">Blues</button>
+                            <button class="btn btn-default filter" data-filter=".item1">Pinks</button>
+                            <button class="btn btn-default filter" data-filter=".item2">Reds</button>
+                            <button class="btn btn-default filter" data-filter=".item3">Greens</button>
+                            <button class="btn btn-default filter" data-filter=".item4">Blues</button>
                         </div>
                         <div class="grid">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg">
-                                        <div class="portfolio_images">
-                                            <img class="mix pink" src="http://placehold.it/300/d360cc/000000">
-                                            <img class="mix red" src="http://placehold.it/300/bc2b30/ffffff">
-                                            <img class="mix green" src="http://placehold.it/300/6fdd59/000000">
+                                        <!-- <div class="portfolio_images"> -->
+                                        <div class="portfolio_img">
+                                            <img src="https://www.dusanholovej.com/files/layout/img/blog/TUTORIAL-Shampoo-and-Shower-Gel.jpg"
+                                                class="mix item1">
+                                            <div class="portfolio_overlay"></div>
+                                        </div>
+                                        <!-- </div> -->
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="portfolio_img">
+                                            <img src="https://petapixel.com/assets/uploads/2023/06/Boss-Infinite-800x533.jpg"
+                                                class="mix item2">
+                                            <div class="portfolio_overlay"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg">
-                                        <div class="portfolio_images">
-                                            <img class="mix blue" src="http://placehold.it/300/2e086f/ffffff">
-                                            <img class="mix red" src="http://placehold.it/300/eab914/000000">
-                                            <img class="mix blue" src="http://placehold.it/300/00f9ff/000000">
+                                        <div class="portfolio_img">
+                                            <img src="https://spectrum-brand.com/cdn/shop/articles/Cover_Photo.jpg?v=1617060405&width=1500"
+                                                class="mix item3">
+                                            <div class="portfolio_overlay"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg">
-                                        <div class="portfolio_images">
-                                            <img class="mix green" src="http://placehold.it/300/1b8965/ffffff">
-                                            <img class="mix green" src="http://placehold.it/300/58f983/000000">
-                                            <img class="mix red" src="http://placehold.it/300/ec2b3b/ffffff">
+                                        <!-- <div class="portfolio_images"> -->
+                                        <div class="portfolio_img">
+                                            <img src="https://assets-global.website-files.com/622488277ab5ee818d179d9f/6499b74e1f397e5cd084a770_web_sesan%20updyke_r1_0125.jpg"
+                                                class="mix item4">
+                                            <div class="portfolio_overlay"></div>
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="portfolio_img">
+                                            <img src="https://miro.medium.com/v2/resize:fit:1400/1*SOTWBvkZtw0hrpz51roSVw.jpeg"
+                                                class="mix item2">
+                                            <div class="portfolio_overlay"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="portfolio_img">
+                                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9f397f125043517.61113d4bc094f.png"
+                                                class="mix item1">
+                                            <div class="portfolio_overlay"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="portfolio_images">
+                                        <div class="portfolio_img">
+                                            <img src="https://youthincmag.com/wp-content/uploads/2020/12/Unsplash.jpeg"
+                                                class="mix item3">
+                                            <div class="portfolio_overlay"></div>
+                                        </div>
+                                        <div class="portfolio_img">
+                                            <img src="https://cdn.shopify.com/s/files/1/2303/2711/files/2_e822dae0-14df-4cb8-b145-ea4dc0966b34.jpg?v=1617059123"
+                                                class="mix item3">
+                                            <div class="portfolio_overlay"></div>
+                                        </div>
+                                        <div class="portfolio_img">
+                                            <img src="https://images.squarespace-cdn.com/content/v1/5a1fac7e914e6b30d737146f/1683652897432-UKUTT07XCKS9NI9NLOXT/228A4750a.jpg"
+                                                class="mix item2">
+                                            <div class="portfolio_overlay"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -570,6 +617,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -784,11 +832,11 @@
 
 
             $('.menu_bar').on('click', function () {
-                $('.menu_bg').fadeIn()
+                $('.menu_bg').fadeToggle()
             })
 
             // $('.fa-close').on('click', function(){
-            //     $('.menu_bg').slideUp()
+            //     $('.menu_bg').fadeOut()
             // })
 
             let box = document.querySelector('.counter')
@@ -838,12 +886,7 @@
                 });
             });
 
-            //     jQuery(document).ready(function () {
-
-            //         jQuery('.gallery').mixItUp();
-
-            //     });
-            // </script>
+        </script>
 </body>
 
 </html>
