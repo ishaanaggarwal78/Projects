@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('globals/header') %>
+</head>
+
+<body>
+
+
+    <section class="our_industries">
+        <div class="container">
+            <div class="row">
+                <% industries.forEach((industry)=> { %>
+                    <div class="col-lg-4">
+                        <div class="industry_img">
+                            <img src="img/<%- industry.img %>.jpg" alt="" class="img-fluid">
+                            <div class="industry_overlay">
+                                <button class="primary_btn"><%- industry.button %></button>
+                                <h2><%- industry.h2 %></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="industry_img">
+                            <img src="img/<%- industry.img %>.jpg" alt="" class="img-fluid">
+                            <div class="industry_overlay">
+                                <button class="primary_btn"><%- industry.button %></button>
+                                <h2><%- industry.h2 %></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+
+
+                        <% industries2.forEach((industry, industry2)=> { %>
+                            <div class="col-lg-8">
+                                <div class="industry_img">
+                                    <img src="img/<%- industry2.img %>.jpg" alt="" class="img-fluid">
+                                    <div class="industry_overlay">
+                                        <button class="primary_btn"><%- industry2.button %></button>
+                                        <h2><%- industry2.h2 %></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="industry_img">
+                                    <img src="img/<%- industry.img %>.jpg" alt="" class="img-fluid">
+                                    <div class="industry_overlay">
+                                        <button class="primary_btn"><%- industry.button %></button>
+                                        <h2><%- industry.h2 %></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <% }) %>
+            </div>
+        </div>
+    </section>
+
+    <%- include('globals/scripts') %>
+</body>
+
+</html>

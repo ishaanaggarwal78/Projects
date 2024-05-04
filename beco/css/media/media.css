@@ -1,0 +1,567 @@
+/* ============================================= PRE-DEFINED ============================================= */
+
+@media (max-width:1024px) {
+    .sections .head_styling {
+        font-size: 2.5rem;
+    }
+
+    .primary_btn {
+        padding: 0 2rem;
+        font-size: 15px;
+        height: 3rem;
+    }
+
+    .sections {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width:426px) {
+    .sections .head_styling {
+        font-size: 2rem;
+        padding-top: 0.5rem;
+    }
+
+    .sections span {
+        font-size: 0.8rem;
+    }
+
+    body {
+        padding-top: 70px;
+    }
+
+    nav .logo {
+        margin: 0;
+        width: 6rem;
+        height: 100%;
+        cursor: pointer;
+    }
+}
+
+/* ============================================= SIDEBAR ============================================= */
+
+
+@media (max-width:426px) {
+    .sidebar {
+        margin-left: -85%;
+        width: 80%;
+    }
+
+    .sidebar_open {
+        margin-left: 0;
+    }
+
+    .sidebar ul {
+        padding: 0;
+        padding-top: 2rem;
+    }
+
+    nav .contact_btn button {
+        display: none;
+    }
+}
+
+@media (max-width:376px) {
+    .sidebar {
+        margin-left: -106%;
+        width: 100%;
+    }
+
+    .sidebar_open {
+        margin-left: 0;
+    }
+
+}
+
+/* ============================================= MAIN ============================================= */
+
+@media (max-width:1024px) {
+    .navbar1 {
+        padding: 0 2rem;
+    }
+
+    .main_section {
+        height: auto;
+        padding: 6rem 0;
+    }
+
+    .main_section .main_head h1 {
+        font-size: 3rem;
+    }
+
+    .main_section .main_head p {
+        font-size: 1rem;
+    }
+
+    .main_section .main_btns button {
+        margin-right: 2rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:768px) {
+    nav .menu_bar {
+        display: block;
+    }
+
+    nav .main_ul {
+        display: none;
+    }
+
+    nav .contact_btn button {
+        height: 3rem;
+        padding: 0 2rem;
+        font-size: 15px;
+    }
+
+    .main_section .main_btns button {
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width:426px) {
+    .navbar1 {
+        padding: 0 1.5rem;
+        height: 70px;
+    }
+
+    .main_section {
+        padding-top: 5rem;
+    }
+
+    .main_section .main_head h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:376px) {
+    .main_section .main_head h1 {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width:321px) {
+    .main_btns .secondary_btn {
+        margin-top: 1rem;
+    }
+}
+
+/* ============================================= ABOUT ============================================= */
+
+@media (max-width:1024px) {
+    .about_us {
+        padding: 6rem 0;
+        padding-bottom: 2rem;
+    }
+
+    .about_us .about_us_info h2 {
+        font-size: 2.5rem;
+    }
+
+    .about_us .about_us_info {
+        padding-top: 0rem;
+    }
+
+    .about_us .about_us_info p {
+        font-style: italic;
+        font-size: 17px;
+        color: var(--para-color);
+    }
+}
+
+
+@media (max-width:768px) {
+    .about_us .video_loop img {
+        width: 80%;
+        margin-left: calc(50% - 40%);
+    }
+
+    .video_overlay {
+        padding: 1rem 0;
+    }
+
+    .yt_video {
+        height: 100vh;
+        width: 80%;
+        margin-left: calc(50% - 40%);
+    }
+
+    .yt_video iframe {
+        height: 75vh;
+    }
+
+    .about_us .about_us_info {
+        width: 85%;
+        padding-top: 3.5rem;
+        /* padding-left: 4.2rem; */
+    }
+}
+
+@media (max-width:426px) {
+    .about_us .video_loop img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .about_play_btn {
+        height: 70px;
+        width: 70px;
+        font-size: 18px;
+    }
+
+    .outer_ring {
+        height: 60px;
+        width: 60px;
+    }
+
+    .about_play_btn:hover .outer_ring {
+        height: 80px;
+        width: 80px;
+    }
+
+    .video_overlay {
+        padding: 0;
+    }
+
+    .yt_video {
+        height: 100vh;
+        width: 80%;
+        margin-left: calc(50% - 40%);
+    }
+
+    .yt_video iframe {
+        height: 30vh;
+        margin-bottom: 3rem;
+    }
+
+    .about_us {
+        padding: 4rem 0;
+        padding-bottom: 2rem;
+    }
+
+    .about_us .about_us_info h2 {
+        font-size: 2.3rem;
+    }
+
+    .about_us .about_us_info {
+        padding-top: 1.5rem;
+    }
+
+}
+
+/* ============================================= SERVICES ============================================= */
+
+@media (max-width:1024px) {
+    .our_services .services_btn {
+        font-size: 17px;
+        border: 1px solid black;
+        height: 50px;
+    }
+
+    .our_services .services_details .services_img img {
+        height: 12rem;
+    }
+
+    .our_services .services_info {
+        padding: 1.5rem;
+        background-color: var(--white-color);
+        padding-bottom: 1rem;
+    }
+
+    .our_services .services_info p {
+        padding: 0.5rem 0;
+        font-size: 15px;
+    }
+
+    .counter_head {
+        width: 70%;
+        margin-left: calc(50% - 35%);
+    }
+
+    .main_counter h1 {
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width:768px) {
+    .our_services .services_btn {
+        margin-top: -5rem;
+    }
+
+    .our_services .head_styling {
+        margin: 0;
+    }
+
+    .our_services .counter_section {
+        padding-bottom: 2rem;
+    }
+
+    .main_counter .figures {
+        padding-bottom: 3rem;
+    }
+}
+
+
+@media (max-width:426px) {
+    .our_services {
+        padding-top: 1rem;
+    }
+
+    .our_services .services_btn {
+        margin-top: -4rem;
+        font-size: 15px;
+        padding: 0.8rem 1.4rem;
+    }
+
+    .our_services .services_details .services_img img {
+        transition: all ease-in-out 0.3s;
+        height: 15rem;
+        width: 100%;
+    }
+
+    .couter_section {
+        padding-bottom: 1rem;
+    }
+
+    .counter_head h1 {
+        font-size: 2rem;
+    }
+
+    .counter_head p {
+        font-size: 1rem;
+    }
+
+    .main_counter {
+        padding-top: 0;
+    }
+
+    .main_counter h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width:376px) {
+    .our_services .services_details .services_img img {
+        height: 13.7rem;
+    }
+}
+
+
+@media (max-width:321px) {
+    .our_services {
+        padding-top: 0;
+    }
+
+    .our_services .services_details .services_img img {
+        height: 11.4rem;
+    }
+}
+
+/* ============================================= CONTACT US ============================================= */
+
+@media (max-width:1024px) {
+    .contact_us {
+        height: auto;
+        padding-bottom: 4rem;
+    }
+
+    .contact_head {
+        margin-top: 5rem;
+    }
+
+    .contact_head h1 {
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width:426px) {
+    .contact_us {
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+    }
+
+    .contact_head h1 {
+        font-size: 2.3rem;
+    }
+
+    .contact_head span {
+        font-size: 2.3rem;
+    }
+
+    .contact_head .contact_para {
+        font-size: 1rem;
+    }
+}
+
+
+/* ============================================= INDUSTRIES ============================================= */
+
+@media (max-width:1024px) {
+    .our_industries .industry_img {
+        height: 250px;
+    }
+
+    .industry_img h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .our_industries .head_styling {
+        padding-bottom: 1rem;
+    }
+}
+
+
+@media (max-width:426px) {
+    .our_industries {
+        padding-bottom: 1rem;
+    }
+
+    .our_industries .primary_btn {
+        height: 40px;
+        padding: 0.5rem 2rem;
+        font-size: 14px;
+    }
+}
+
+/* ============================================= TEAM ============================================= */
+
+@media (max-width:1024px) {
+    .our_team {
+        padding-top: 1rem;
+    }
+
+    .team_social i {
+        font-size: 16px;
+        padding: 12px 14px;
+        margin-right: 3px;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .team_info h3 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:768px) {
+    .our_team .head_styling {
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    .our_team .team_img {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width:426px) {
+    .our_team {
+        padding-top: 1rem;
+    }
+
+    .our_team .team_img {
+        margin-top: 1rem;
+    }
+}
+
+/* ============================================= FAQ ============================================= */
+
+@media (max-width:1024px) {
+    .faq .sections_head {
+        width: 80%;
+    }
+
+    .accordion-header button {
+        line-height: 30px;
+        font-size: 19px;
+    }
+}
+
+@media (max-width:768px) {
+    .faq .primary_btn {
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media (max-width:426px) {
+    .faq_info {
+        padding-bottom: 0.5rem;
+    }
+}
+
+
+@media (max-width:321px) {
+    .faq .sections_head .head_styling {
+        font-size: 1.5rem;
+    }
+    .faq .faq_info h1{
+        font-size: 1.5rem;
+    }
+    .faq .faq_info p{
+        font-size: 0.9rem;
+    }
+}
+
+/* ============================================= NEWSLETTER ============================================= */
+
+@media (max-width:1024px) {
+    .newsletter_main h1 {
+        font-size: 2rem;
+    }
+
+    .newsletter_main .input1 {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width:768px) {
+    .newsletter_main p {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width:426px) {
+    .newsletter_main {
+        width: 90%;
+        margin-left: calc(50% - 45%);
+    }
+}
+
+/* ============================================= FOOTER ============================================= */
+
+@media (max-width:1024px) {
+    .footer {
+        margin-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .footer_links h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .footer {
+        padding-bottom: 2rem;
+    }
+
+    .footer_logo p {
+        padding-bottom: 1rem;
+    }
+
+    .footer .team_social {
+        margin-bottom: 3rem;
+    }
+
+    .footer .footer_links ul {
+        padding-top: 0;
+        padding-bottom: 2rem;
+    }
+}

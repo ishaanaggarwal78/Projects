@@ -1,0 +1,112 @@
+:root {
+    --font-color: #161C2D;
+    /* --button-bg: #3a49f3; */
+    --button-bg: #473BF0;
+    --small-head: #F64B4B;
+    --secondary-color: #161C2D;
+    --line-color: #D5D7DD;
+    --green-color: #68D585;
+    --white-color: white;
+    --font-family: "DM Sans", sans-serif;
+    --bg-color: #F4F7FA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================================= MAIN SECTION ============================================= */
+
+.opening_image img {
+    width: 100%;
+    margin: 5rem 0;
+}
+
+.opening_image {
+    position: relative;
+}
+
+.opening_image i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: var(--white-color);
+    background-color: var(--button-bg);
+    border-radius: 100%;
+    padding: 2rem;
+}
+
+
+
+
+.contact_info_main {
+    display: flex;
+    gap: 1.5rem;
+    padding: 3rem 0;
+}
+
+.contact_us_info h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+    padding-bottom: 1rem;
+}
+
+.contact_us_info .main_para {
+    padding: 0;
+    margin: 0;
+}
+
+/* ============================================= JOB OPENINGS ============================================= */
+
+.current_openings {
+    background-color: var(--bg-color);
+    margin-top: 4rem;
+}
+
+.jobs_outer {
+    margin: 5rem 3rem;
+}
+
+.jobs_outer .job_blocks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-color);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.jobs_outer .job_blocks h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+}
+
+.jobs_outer .job_blocks .main_para {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: -0.2px;
+}
+
+.jobs_outer .job_blocks i {
+    font-size: 24px;
+    transition: all 0.3s;
+    color: grey;
+}
+
+
+.jobs_outer .job_blocks:hover i{
+    color: var(--button-bg);
+    transition: all 0.3s;
+}

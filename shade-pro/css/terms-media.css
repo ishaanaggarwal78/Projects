@@ -1,0 +1,28 @@
+@media (max-width:1024px) {
+    .main_section .terms_content {
+        padding: 0 5rem;
+        padding-bottom: 5rem;
+    }
+    .main_section .terms_content ul li{
+        line-height: 35px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .main_section .terms_content {
+        padding: 0 1rem;
+        padding-bottom: 5rem;
+    }
+    .main_section .terms_content ul li{
+        line-height: 35px;
+    }
+}
+
+
+@media (max-width:426px) {
+    .main_section .terms_content ul li{
+        line-height: 30px;
+        padding-bottom: 1rem;
+    }
+}

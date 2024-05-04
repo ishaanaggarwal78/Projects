@@ -1,0 +1,147 @@
+:root {
+    --font-color: #161C2D;
+    --button-bg: #473BF0;
+    --small-head: #F64B4B;
+    --secondary-color: #161C2D;
+    --line-color: #D5D7DD;
+    --green-color: #68D585;
+    --white-color: white;
+    --font-family: "DM Sans", sans-serif;
+    --bg-color: #F4F7FA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_section {
+    background-color: var(--bg-color);
+}
+
+.pricing_blocks {
+    text-align: center;
+    border: 1px solid var(--line-color);
+    border-radius: 10px;
+    padding: 1rem;
+    padding-top: 2rem;
+    background-color: var(--white-color);
+    margin: 6rem 0;
+}
+
+.pricing_plans {
+    height: 30px;
+    width: 80px;
+    margin-left: calc(50% - 40px);
+    background-color: rgb(231, 231, 240);
+    color: var(--button-bg);
+    border-radius: 50px;
+}
+
+.pricing_blocks h1 {
+    font-family: var(--font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: -1.72px;
+    color: var(--secondary-color);
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.pricing_blocks .p1 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.12px;
+}
+
+.pricing_blocks .p2 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: -0.24px;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+.pricing_plans span {
+    font-family: var(--font-family);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1.625px;
+    color: var(--button-bg);
+    margin: 0;
+    padding-top: 0.5rem;
+}
+
+.pricing_faq {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.pricing_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing_icon {
+    height: 30px;
+    width: 30px;
+    background-color: var(--green-color);
+    border-radius: 50px;
+    color: var(--white-color);
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.pricing_ans h2 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+}
+
+.pricing_ans .main_para {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: -0.24px;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.pricing_ans a {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    text-decoration: none;
+}
+
+.pricing_ans a i {
+    padding-left: 1rem;
+}
+
+.ques_support {
+    text-align: center;
+    padding-bottom: 7rem;
+}
+
+.ques_support span {
+    font-family: var(--font-family);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: -0.24px;
+    color: var(--secondary-color);
+}
+
+.ques_support span a{
+    color: var(--button-bg);
+    text-decoration: none;
+}

@@ -1,0 +1,76 @@
+@media (max-width:1024px) {
+    .main_section .checkout_outer {
+        display: block;
+    }
+
+    .checkout_outer {
+        margin-left: calc(50% - 285px);
+    }
+
+    .checkout_form {
+        width: 570px;
+        margin-top: 0;
+        margin-bottom: 4rem;
+    }
+
+    .proceed_checkout_cart {
+        padding: 2rem;
+        margin-left: 6rem;
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    .address_input,
+    .card_details {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .address_input .city input {
+        /* width: 250px; */
+    }
+}
+
+
+@media (max-width:426px) {
+    .checkout_form {
+        margin-left: 4rem;
+        /* width: 400px; */
+        width: 100%;
+        margin-left: calc(50% - 200px);
+    }
+
+    .card_number .visa_input input {
+        width: 250px;
+        height: 40px;
+        margin-top: 1.5rem;
+        border: none;
+    }
+
+    .proceed_checkout_cart {
+        padding: 2rem;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width:376px) {
+    .main_section .checkout_outer .checkout_form {
+        margin-right: 0;
+        /* width: 400px; */
+        width: 100%;
+        margin-left: calc(50% - 200px);
+    }
+
+    .credit_img img{
+        width: 100%;
+    }
+
+    .proceed_checkout_cart {
+        width: 300px;
+    }
+}

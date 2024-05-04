@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+
+        .outer_ring {
+            position: relative;
+            border: 4px solid blue;
+            height: 10px;
+            width: 10px;
+            border-radius: 100%;
+            animation: outer linear 2s infinite forwards;
+        }
+
+        .inner_ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 4px solid blue;
+            height: 10px;
+            width: 10px;
+            border-radius: 100%;
+            animation: inner linear 2s infinite forwards;
+            animation-delay: 0.5s;
+        }
+
+
+        @keyframes inner {
+            0% {
+                height: 10px;
+                width: 10px;
+            }
+
+            30% {
+                /* opacity: 20%; */
+            }
+
+            100% {
+                height: 90px;
+                width: 90px;
+                opacity: 0;
+            }
+        }
+
+        @keyframes outer {
+            0% {
+                height: 10px;
+                width: 10px;
+            }
+
+            100% {
+                height: 100px;
+                width: 100px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer_ring">
+        <div class="inner_ring"></div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+@media (max-width:1024px) {
+    .login_form .login_btn button {
+        width: 26%;
+    }
+
+    .contact_us_info .main_para {
+        font-size: 15px;
+        margin: 0;
+    }
+}
+
+
+@media (max-width:768px) {
+    .contact_info_main{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    .contact_us_info h2{
+        padding-bottom: 0.5rem
+    }
+
+    .login_form .login_btn button{
+        width: 40%;
+        height: 50px;
+    }
+}
+
+
+@media (max-width:426px) {
+    .login_form{
+        padding: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 7rem;
+    }
+    .contact_info_main{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        padding-left: 5rem;
+        padding-right: 1rem;
+    }
+    .contact_us_info h2{
+        padding-bottom: 0;
+    }
+
+    .login_form .login_btn button{
+        width: 70%;
+        height: 50px;
+    }
+}
+
+
+
+
+@media (max-width:426px) {
+    .login_form{
+        padding: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 7rem;
+    }
+    .contact_info_main{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        padding-left: 3rem;
+        padding-right: 1rem;
+    }
+}

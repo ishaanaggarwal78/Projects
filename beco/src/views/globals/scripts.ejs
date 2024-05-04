@@ -1,0 +1,82 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+
+
+
+    $(document).on('mouseenter', '.dropdown_li', function () {
+        $('.dropdown_ul').slideDown();
+    });
+    $(document).on('mouseleave', '.dropdown_li', function () {
+        $('.dropdown_ul').slideUp();
+    });
+
+
+    $(document).on('click', '.about_play_btn', function () {
+        $('.video_overlay').fadeIn();
+    });
+    $(document).on('click', '.video_overlay', function () {
+        $('.video_overlay').fadeOut();
+    });
+
+
+    let $grid = $('.grid').isotope({
+        itemSelector: ".mix",
+        // percentPosition: true,
+        // layoutMode: "fitRows",
+    });
+
+    $(".buttons button").click(function () {
+        $(".buttons button").removeClass("active");
+        $(this).addClass("active");
+
+        let data = $(this).attr("data-filter");
+        $grid.isotope({
+            filter: data,
+        });
+    });
+
+
+
+    $(document).on('click', '.menu_bar', function () {
+        $('.sidebar').addClass('sidebar_open');
+    });
+    $(document).on('click', '.fa-x', function () {
+        $('.sidebar').removeClass('sidebar_open');
+    });
+
+
+    $(document).on('click', '.menu_bar', function () {
+        $('.bg_overlay').addClass('new_overlay');
+    });
+    $(document).on('click', '.fa-x', function () {
+        $('.bg_overlay').removeClass('new_overlay');
+    });
+
+
+    $(document).on('click', '.bg_overlay', function () {
+        $('.sidebar').removeClass('sidebar_open');
+        $('.bg_overlay').removeClass('new_overlay');
+    });
+</script>

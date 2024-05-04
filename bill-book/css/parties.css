@@ -1,0 +1,1120 @@
+:root {
+    --primary-color: rgb(52, 0, 80);
+    --border-color: rgb(220, 220, 220);
+    --blue-main: rgb(78, 19, 195);
+    --light-blue: rgb(119, 190, 249);
+    --dark-grey: grey;
+    --light-grey: #c2c4c7;
+    --green-color: rgb(62, 211, 132);
+    --black-color: black;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.pending_actions {
+    position: fixed;
+    bottom: 1.2rem;
+    right: 2rem;
+}
+
+.pending_actions button {
+    background-color: rgb(0, 128, 66);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px rgb(0, 128, 66);
+}
+
+.pending_actions button i {
+    font-size: 16px;
+    padding-right: 3px;
+}
+
+/* ============================================= PRE_DEFINED ============================================= */
+
+
+.main_content {
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 8px;
+    margin-left: 15%;
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    height: 98vh;
+    box-shadow: 1px 1px 10px -6px var(--dark-grey);
+    padding: 0.6rem 1rem;
+    overflow: auto;
+}
+
+.main_content p {
+    margin: 0;
+    padding: 0;
+}
+
+.main_content h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.sections {
+    margin-bottom: 1rem;
+}
+
+
+.keyboard_btn {
+    font-size: 13px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    padding: 0.5rem 0.8rem;
+    color: var(--dark-grey);
+    display: grid;
+    place-items: center;
+    transition: all ease-in-out 0.2s;
+}
+
+.keyboard_btn:hover {
+    background-color: var(--border-color);
+    transition: all ease-in-out 0.2s;
+    color: var(--black-color);
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #161C2D;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark-grey);
+    border-radius: 20px;
+}
+
+/* ============================================= SIDEBAR ============================================= */
+
+aside {
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 14%;
+    background-color: #161C2D;
+    height: 98vh;
+    border-radius: 7px;
+    margin: 8px;
+    padding: 8px 10px;
+}
+
+.main_links {
+    overflow: auto;
+    height: 80vh;
+}
+
+.logo {
+    display: flex;
+}
+
+
+.logo img {
+    width: 30px;
+}
+
+.logo a {
+    /* width: 180px; */
+    text-decoration: none;
+    color: #fff;
+    line-height: 18px;
+    padding-left: 4px;
+}
+
+.logo a h6 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.logo a span {
+    color: #ffffff7e;
+    font-size: 11px;
+}
+
+.create_sales {
+    width: 100%;
+    height: 28px;
+    background-color: #c2c4c7;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 27px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.create_sales i {
+    padding-right: 5px;
+    /* font-size: 10px; */
+}
+
+.create_sales .down {
+    width: 34px;
+    height: 28px;
+    background-color: #e4e5e8;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 7px;
+    padding-right: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* padding: 13px 0; */
+}
+
+ul li {
+    list-style: none;
+}
+
+.main_links li h6 {
+    font-size: 9px;
+    color: var(--light-grey);
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+ul li>a {
+    text-decoration: none;
+    color: #ffffff7e;
+    font-size: 12px;
+}
+
+.main_links li i {
+    padding-right: 10px;
+}
+
+.child_links {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.child_links li {
+    width: 100%;
+    line-height: 34px;
+    /* padding: 8px 0; */
+    /* margin-left: -40px; */
+}
+
+.child_links li a {
+    padding: 0 10px;
+    font-weight: 500;
+    /* border-radius: 20px; */
+}
+
+.child_links li:hover {
+    background-color: #2a4166;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.child_links li:hover a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.child_links .active {
+    width: 100%;
+    color: #fff;
+    background-color: #2a4166;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.child_links li a .fa-angle-right {
+    float: right;
+    padding-top: 13px;
+    padding-right: 13px;
+}
+
+.scroll_options {
+    background-color: #161C2D;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding: 7px 0;
+}
+
+.scroll_options span {
+    font-size: 10px;
+    background-color: var(--dark-grey);
+    border-radius: 20px;
+    padding: 3px 13px;
+    text-align: center;
+    color: white;
+    margin-left: 35px;
+}
+
+.scroll_options i {
+    font-size: 9px;
+}
+
+.sidebar_bottom {
+    position: absolute;
+    bottom: 0px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #1e2a48;
+}
+
+.sidebar_bottom .child_links {
+    padding-left: 8px;
+}
+
+
+.sidebar_bottom ul li:hover {
+    background-color: #1e2a48;
+}
+
+.side_end {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.side_end i {
+    padding-right: 4px;
+}
+
+.side_end span {
+    color: var(--dark-grey);
+    font-weight: 700;
+    font-size: 9px;
+}
+
+
+/* ============================================= HEADER ============================================= */
+
+.main_head {
+    display: flex;
+}
+
+.top_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_head h6 {
+    font-weight: 600;
+    padding-top: 0.5rem;
+}
+
+.reports_keyboard {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.reports_btn {
+    width: 11rem;
+    padding-left: 2rem;
+    color: rgb(69, 208, 255);
+    border: 1px solid rgb(69, 208, 255);
+    font-weight: 600;
+    outline: none;
+}
+
+.category_menu select:hover {
+    background-color: white;
+    color: rgb(69, 208, 255);
+}
+
+.category_menu select option {
+    color: black;
+}
+
+.category_menu {
+    border-radius: 5px;
+}
+
+.category_menu i {
+    position: absolute;
+    top: 19px;
+    padding-left: 13px;
+    color: rgb(69, 208, 255);
+}
+
+
+/* ============================================= REFERRALS ============================================= */
+
+.referrals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(229, 246, 251);
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+}
+
+.earn_referral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 4px;
+}
+
+.earn_referral h6 {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.earn_referral i {
+    font-size: 14px;
+}
+
+.earn_referral .gift_icon {
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    cursor: auto;
+    margin-right: 1rem;
+}
+
+.earn_referral p {
+    font-size: 12px;
+    color: var(--dark-grey);
+    font-weight: 500;
+}
+
+.earn_referral p i {
+    font-size: 11px;
+    /* font-weight: 400; */
+}
+
+.refer_now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0.5rem;
+}
+
+.refer_now_btn {
+    padding: 0.4rem 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin-right: 1.5rem;
+    background-color: white;
+    font-size: 13px;
+}
+
+.refer_now i {
+    color: var(--dark-grey);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* ============================================= COLLECT AND PAY ============================================= */
+
+.amount_blocks {
+    border: 1px solid var(--blue-main);
+    background-color: rgb(232, 232, 249);
+    border-radius: 10px;
+    padding: 0.2rem 0.7rem;
+    cursor: pointer;
+}
+
+
+.amount_blocks i,
+span {
+    color: var(--blue-main);
+    font-size: 13px;
+}
+
+.amount_blocks i {
+    font-size: 13px;
+}
+
+.amount_blocks h4 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0.3rem 0;
+    font-size: 21px;
+
+}
+
+.amount_blocks h4 i {
+    color: black;
+    font-size: 21px;
+    padding: 0;
+}
+
+.to_collect,
+.to_pay {
+    background-color: white;
+    border-color: var(--border-color);
+}
+
+.to_collect .amount_heads i {
+    color: var(--green-color)
+}
+
+.to_collect .amount_heads span {
+    color: var(--green-color);
+}
+
+.to_pay .amount_heads i {
+    color: rgb(199, 12, 12);
+}
+
+.to_pay .amount_heads span {
+    color: rgb(199, 12, 12);
+}
+
+/* ============================================= CREATE PARTIES ============================================= */
+
+.create_party_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 2rem; */
+}
+
+.search_select,
+.bulk_create {
+    display: flex;
+    gap: 1rem;
+}
+
+.search_select select {
+    display: flex;
+    gap: 1rem;
+    width: 14rem;
+    outline: none;
+}
+
+.search_select select:hover {
+    background-color: white;
+}
+
+.search_select .keyboard_btn:hover {
+    background-color: white;
+}
+
+.create_party_btn button {
+    font-weight: 500;
+    font-size: 12px;
+    background-color: var(--blue-main);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1.4rem;
+}
+
+.create_party_btn button:hover {
+    background-color: rgb(55, 33, 153);
+    color: white;
+}
+
+.bulk_create {
+    position: relative;
+}
+
+.bulk_create select {
+    padding-left: 1.5rem;
+    outline: none;
+}
+
+.bulk_create select:hover {
+    background-color: white;
+}
+
+.bulk_create i {
+    position: absolute;
+    top: 9px;
+    padding-left: 9px;
+    color: var(--dark-grey);
+}
+
+/* ============================================= TABULAR DATA ============================================= */
+
+.tabular_data {
+    width: 100%;
+    /* overflow: auto; */
+}
+
+.tabular_data table {
+    width: 100%;
+    border: none;
+    border: 1px solid var(--border-color);
+}
+
+.tabular_data table tr {
+    width: 100%;
+}
+
+.tabular_data table .card-header:hover {
+    background-color: rgb(0, 0, 0, 0.01);
+    cursor: auto;
+}
+
+.tabular_data table tr:hover {
+    background-color: rgb(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.tabular_data table tr th {
+    border-right: 1px solid var(--border-color);
+    font-size: 13px;
+    padding: 0.5rem 1rem;
+    background-color: #e7e9ed80;
+    border-bottom: 1px solid var(--border-color);
+    /* padding-right: 11rem; */
+}
+
+.tabular_data table tr td {
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    color: rgb(99, 99, 99);
+    font-size: 13px;
+    padding: 0.5rem 1rem;
+    overflow: auto;
+}
+
+.tabular_data table tr td .fa-arrow-down {
+    color: var(--green-color);
+}
+
+:root {
+    --primary-color: rgb(52, 0, 80);
+    --border-color: rgb(220, 220, 220);
+    --blue-main: rgb(78, 19, 195);
+    --dark-grey: grey;
+    --light-grey: #c2c4c7;
+    --green-color: rgb(62, 211, 132);
+    --black-color: black;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================================= PRE_DEFINED ============================================= */
+
+
+.main_content {
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 8px;
+    margin-left: 15%;
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    height: 98vh;
+    box-shadow: 1px 1px 10px -6px var(--dark-grey);
+    padding: 0.6rem 1rem;
+}
+
+.main_content p {
+    margin: 0;
+    padding: 0;
+}
+
+.main_content h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.sections {
+    margin-bottom: 1rem;
+}
+
+
+.keyboard_btn {
+    font-size: 13px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    padding: 0.5rem 0.8rem;
+    color: var(--dark-grey);
+    display: grid;
+    place-items: center;
+    transition: all ease-in-out 0.2s;
+}
+
+.keyboard_btn:hover {
+    background-color: var(--border-color);
+    transition: all ease-in-out 0.2s;
+    color: var(--black-color);
+    cursor: pointer;
+}
+
+/* ============================================= SIDEBAR ============================================= */
+
+aside {
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 14%;
+    background-color: #161C2D;
+    height: 98vh;
+    border-radius: 7px;
+    margin: 8px;
+    padding: 8px 10px;
+}
+
+.main_links {
+    overflow: auto;
+    height: 80vh;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo_icon {
+    /* width: 49px;
+    height: 40px; */
+    background-image: url('c:/Users/dell/Downloads/psychedelic.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    /* margin-top: 3px; */
+}
+
+.logo img {
+    width: 30px;
+    /* height: 20px; */
+    /* margin-left: 10px;
+    margin-top: 10px; */
+}
+
+.logo a {
+    /* width: 180px; */
+    text-decoration: none;
+    color: #fff;
+    line-height: 18px;
+    padding-left: 4px;
+}
+
+.logo a h6 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.logo a span {
+    color: #ffffff7e;
+    font-size: 11px;
+}
+
+.create_sales {
+    width: 100%;
+    height: 28px;
+    background-color: #c2c4c7;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 27px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.create_sales i {
+    padding-right: 5px;
+    /* font-size: 10px; */
+}
+
+.create_sales .down {
+    width: 34px;
+    height: 28px;
+    background-color: #e4e5e8;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 7px;
+    padding-right: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* padding: 13px 0; */
+}
+
+ul li {
+    list-style: none;
+}
+
+.main_links li h6 {
+    font-size: 9px;
+    color: var(--light-grey);
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+ul li>a {
+    text-decoration: none;
+    color: #ffffff7e;
+    font-size: 12px;
+}
+
+
+
+.child_links {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.child_links li {
+    width: 100%;
+    line-height: 34px;
+    /* padding: 8px 0; */
+    /* margin-left: -40px; */
+}
+
+.child_links li a {
+    padding: 0 10px;
+    font-weight: 500;
+    /* border-radius: 20px; */
+}
+
+.child_links li:hover {
+    background-color: #2a4166;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.child_links li:hover a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.child_links li a .fa-angle-right {
+    float: right;
+    padding-top: 13px;
+    padding-right: 13px;
+}
+
+.scroll_options {
+    background-color: #161C2D;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding: 7px 0;
+}
+
+.scroll_options span {
+    font-size: 10px;
+    background-color: var(--dark-grey);
+    border-radius: 20px;
+    padding: 3px 13px;
+    text-align: center;
+    color: white;
+    margin-left: 35px;
+}
+
+.scroll_options i {
+    font-size: 9px;
+}
+
+.sidebar_bottom {
+    position: absolute;
+    bottom: 0px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #1e2a48;
+}
+
+.sidebar_bottom .child_links {
+    padding-left: 8px;
+}
+
+
+.sidebar_bottom ul li:hover {
+    background-color: #1e2a48;
+}
+
+.side_end {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.side_end i {
+    padding-right: 4px;
+}
+
+.side_end span {
+    color: var(--dark-grey);
+    font-weight: 700;
+    font-size: 9px;
+}
+
+
+/* ============================================= HEADER ============================================= */
+
+.main_head {
+    display: flex;
+}
+
+.top_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_head h6 {
+    font-weight: 600;
+    padding-top: 0.5rem;
+}
+
+.reports_keyboard {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.reports_btn {
+    width: 11rem;
+    padding-left: 2rem;
+    color: var(--light-blue);
+    border: 1px solid var(--light-blue);
+}
+
+.category_menu {
+    border-radius: 5px;
+}
+
+.category_menu i {
+    position: absolute;
+    top: 18px;
+    padding-left: 13px;
+    color: var(--light-blue);
+}
+
+
+/* ============================================= REFERRALS ============================================= */
+
+.referrals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(229, 246, 251);
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+}
+
+.earn_referral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 4px;
+}
+
+.earn_referral h6 {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.earn_referral i {
+    font-size: 14px;
+}
+
+.earn_referral .gift_icon {
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    cursor: auto;
+    margin-right: 1rem;
+}
+
+.earn_referral p {
+    font-size: 12px;
+    color: var(--dark-grey);
+    font-weight: 500;
+}
+
+.earn_referral p i {
+    font-size: 11px;
+    /* font-weight: 400; */
+}
+
+.refer_now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0.5rem;
+}
+
+.refer_now_btn {
+    padding: 0.4rem 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin-right: 1.5rem;
+    background-color: white;
+    font-size: 13px;
+}
+
+.refer_now i {
+    color: var(--dark-grey);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* ============================================= COLLECT AND PAY ============================================= */
+
+.amount_blocks {
+    border: 1px solid var(--blue-main);
+    background-color: rgb(232, 232, 249);
+    border-radius: 10px;
+    padding: 0.2rem 0.7rem;
+    cursor: pointer;
+}
+
+
+.amount_blocks i,
+span {
+    color: var(--blue-main);
+    font-size: 13px;
+}
+
+.amount_blocks i {
+    font-size: 13px;
+}
+
+.amount_blocks h4 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0.3rem 0;
+    font-size: 21px;
+
+}
+
+.amount_blocks h4 i {
+    color: black;
+    font-size: 21px;
+    padding: 0;
+}
+
+.to_collect,
+.to_pay {
+    background-color: white;
+    border-color: var(--border-color);
+}
+
+.to_collect .amount_heads i {
+    color: var(--green-color)
+}
+
+.to_collect .amount_heads span {
+    color: var(--green-color);
+}
+
+.to_pay .amount_heads i {
+    color: rgb(199, 12, 12);
+}
+
+.to_pay .amount_heads span {
+    color: rgb(199, 12, 12);
+}
+
+/* ============================================= CREATE PARTIES ============================================= */
+
+.create_party_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 2rem; */
+}
+
+.search_select,
+.bulk_create {
+    display: flex;
+    gap: 1rem;
+}
+
+.search_select select {
+    display: flex;
+    gap: 1rem;
+    width: 14rem;
+}
+
+.create_party_btn button {
+    font-weight: 500;
+    font-size: 12px;
+    background-color: var(--blue-main);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1.4rem;
+}
+
+.create_party_btn button:hover {
+    background-color: rgb(55, 33, 153);
+    color: white;
+}
+
+/* ============================================= TABULAR DATA ============================================= */
+
+.tabular_data {
+    width: 100%;
+    /* overflow: auto; */
+}
+
+.tabular_data table {
+    width: 100%;
+    border: none;
+    border: 1px solid var(--border-color);
+}
+
+.tabular_data table tr {
+    width: 100%;
+}
+
+.tabular_data table .card-header:hover {
+    background-color: rgb(0, 0, 0, 0.01);
+    cursor: auto;
+}
+
+.tabular_data table tr:hover {
+    background-color: rgb(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.tabular_data table tr th {
+    border-right: 1px solid var(--border-color);
+    font-size: 13px;
+    padding: 0.5rem 1rem;
+    background-color: #e7e9ed80;
+    border-bottom: 1px solid var(--border-color);
+    /* padding-right: 11rem; */
+}
+
+.tabular_data table tr td {
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    color: rgb(99, 99, 99);
+    font-size: 13px;
+    padding: 0.5rem 1rem;
+    overflow: auto;
+}
+
+.tabular_data table tr td .fa-arrow-down {
+    color: var(--green-color);
+}

@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #f23801;
+    --secondary-color: #f7e4d6;
+    --black-color: black;
+    --white-color: white;
+    --para-color: rgb(67, 67, 67);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+

@@ -1,0 +1,837 @@
+:root {
+    --font-color: #161C2D;
+    /* --button-bg: #3a49f3; */
+    --button-bg: #473BF0;
+    --small-head: #F64B4B;
+    --secondary-color: #161C2D;
+    --line-color: #272B39;
+    --green-color: #68D585;
+    --white-color: white;
+    --font-family: "DM Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================================================ PRE - DEFINED ================================================= */
+
+
+.sections .container {
+    padding: 0 7rem;
+}
+
+.small_head {
+    color: var(--small-head);
+    /* font-family: 'Gilroy'; */
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1.625px;
+    /* text-align: left; */
+    font-family: var(--font-family);
+}
+
+.sections .sections_heading {
+    text-align: center;
+    width: 530px;
+    margin-left: calc(50% - 265px);
+    padding-top: 7rem;
+}
+
+.sections .sections_heading h2 {
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+    /* font-family: Gilroy; */
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1.2px;
+    /* text-align: center; */
+}
+
+.sections .main_para {
+    opacity: 70%;
+    font-family: var(--font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.24px;
+    /* text-align: left; */
+    color: var(--secondary-color);
+    padding-top: 1.4rem;
+}
+
+.sections p {
+    font-family: var(--font-family);
+}
+
+.container .row div h2 {
+    font-family: var(--font-family);
+    font-weight: 700;
+}
+
+.sections .main_btn .main_btn_2 {
+    height: 60px;
+    margin-top: 1rem;
+    width: 220px;
+    background-color: var(--button-bg);
+}
+
+
+/* ========================================================================================================== */
+
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin-left: calc(50% - 600px);
+    height: 50px;
+    z-index: 999;
+    top: 16px;
+    /* left: 166px */
+}
+
+nav .logo {
+    display: flex;
+}
+
+nav .logo h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--font-color);
+    font-family: var(--font-family);
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+}
+
+nav ul li {
+    margin-left: 2rem;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: 600;
+    font-family: var(--font-family);
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--button-bg);
+    transition: all 0.3s;
+}
+
+.main_btn button {
+    background-color: var(--button-bg);
+    font-weight: 700;
+    border-color: var(--button-bg);
+    font-family: var(--font-family);
+}
+
+/* ============================================= DROPDOWN ============================================= */
+
+.dropdown {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.dropdown:hover .dropdown_menu {
+    opacity: 1;
+    /* display: block; */
+    margin-top: 0;
+    transition: all 0.3s;
+}
+
+.dropdown_menu {
+    position: absolute;
+    top: 2rem;
+    background-color: var(--white-color);
+    /* background-color: red; */
+    width: auto;
+    margin-top: -1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    width: 180px;
+    box-shadow: 0px 0px 10px 5px #161C2D21;
+    opacity: 0;
+    /* display: none; */
+    transition: all 0.3s;
+}
+
+.dropdown_menu li {
+    display: block;
+    line-height: 30px;
+    margin: 0;
+    /* margin: 0 3rem; */
+}
+
+.dropdown_menu li a {
+    width: 10rem;
+    transition: all 0.3s;
+    /* color: var(--secondary-color); */
+}
+
+.dropdown_menu li a:hover {
+    color: var(--button-bg);
+    transition: all 0.3s;
+}
+
+
+
+/* ============================================= MENU BAR ============================================= */
+
+.menu_bar_main {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    /* opacity: 50%; */
+    background-color: var(--small-head);
+    /* display: none; */
+    padding-left: 2rem;
+    z-index: 999;
+    margin-right: -100%;
+    transition: all 0.8s;
+    overflow: scroll;
+    padding-bottom: 3rem;
+}
+
+.new_menu {
+    margin-right: 0;
+    transition: all 0.5s;
+}
+
+.black_bg {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.67);
+    z-index: 999;
+    display: none;
+}
+
+.menu_bar .menu_ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 4rem;
+}
+
+.menu_bar .menu_ul li {
+    margin: 1rem 0;
+}
+
+.menu_bar .menu_ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    /* color: var(--secondary-color); */
+    color: var(--white-color);
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.menu_bar .menu_ul li a:hover {
+    color: var(--button-bg);
+    transition: all 0.3s;
+}
+
+
+
+.inside_dropdown {
+    background-color: var(--white-color);
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    width: 180px;
+    background-color: #da9a9a;
+    /* opacity: 0; */
+}
+
+.inside_dropdown li {
+    list-style: none;
+}
+
+.side_dropdown .inside_dropdown li a {
+    color: var(--secondary-color) !important;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.side_dropdown .inside_dropdown li a:hover {
+    color: var(--button-bg);
+    transition: all 0.3s;
+}
+
+
+
+
+.menu_btn {
+    display: block;
+}
+
+.menu_btn button {
+    background-color: var(--button-bg);
+    width: 90%;
+    height: 50px;
+    font-weight: 600;
+    border-color: var(--button-bg);
+}
+
+.menu_icon {
+    display: none;
+    font-size: 22px;
+}
+
+.close_btn {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 25px;
+    color: var(--white-color);
+}
+
+
+/* ============================================= MAIN SECTION ============================================= */
+
+
+.main_section {
+    background: url('https://www.hdwallpapers.in/download/plain_white_wallpaper_hd_abstract-1920x1080.jpg');
+    width: 100%;
+    padding-bottom: 7rem;
+    /* height: 800px; */
+    /* background: rgba(22, 22, 46, 0.884) url('https://wallpaperset.com/w/full/2/a/0/225676.jpg'); */
+    /* background-blend-mode: darken; */
+    background-size: cover;
+    /* background-position: center; */
+    /* margin-bottom: 50px; */
+    /* padding-bottom: 140px; */
+}
+
+.main_content {
+    padding-top: 220px;
+}
+
+.main_content h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    /* font-family: Gilroy; */
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: -2px;
+    text-align: left;
+}
+
+.main_content .main_para {
+    opacity: 70%;
+    font-family: var(--font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: var(--secondary-color);
+    padding-top: 1.4rem;
+    padding-right: 2rem;
+}
+
+.main_content .main_btn_2 {
+    height: 60px;
+    margin-top: 1rem;
+    width: 220px;
+    background-color: var(--button-bg);
+}
+
+
+.main_image {
+    padding-top: 160px;
+}
+
+/* ============================================= SERVICES ============================================= */
+
+
+.services .services_blocks {
+    width: 340px;
+    height: 440px;
+    border-radius: 10px;
+    padding: 50px 35px;
+    color: var(--white-color);
+}
+
+.services .service1 {
+    background-color: var(--green-color)
+}
+
+.services .service2 {
+    background-color: var(--button-bg);
+}
+
+.services .service3 {
+    background-color: var(--small-head)
+}
+
+.services .services_blocks .services_icon {
+    margin-left: calc(50% - 55px);
+    margin-bottom: 2.2rem;
+}
+
+.services .services_blocks .services_icon img {
+    width: 110px;
+    height: 130px;
+}
+
+.services .services_content {
+    text-align: center;
+}
+
+.services .services_content h5 {
+    font-family: var(--font-family);
+    line-height: 34px;
+    letter-spacing: -0.5px;
+}
+
+.services .services_content p {
+    font-family: var(--font-family);
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 29px;
+    letter-spacing: -0.24px;
+    opacity: 65%;
+    padding-bottom: 2rem;
+}
+
+.services .services_content a {
+    color: var(--white-color);
+    font-family: var(--font-family);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* ============================================= TESTIMONIAL 1 ============================================= */
+
+.testimonial_main {
+    display: flex;
+    justify-content: center;
+    margin: 0 200px;
+    margin-top: 8rem;
+    height: 300px;
+    border-bottom: 1px solid var(--line-color);
+}
+
+.testimonial_main .expert_review {
+    padding-left: 4rem;
+}
+
+.testimonial_main .expert_review h6 {
+    font-family: var(--font-family);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: var(--font-color);
+    padding: 1.4rem 0;
+    margin: 0;
+}
+
+.testimonial_main .expert_review i {
+    color: #FCAD38;
+    height: 20px;
+    width: 20px;
+}
+
+/* ============================================= OUR STORY ============================================= */
+
+.our_story .sections_heading {
+    text-align: left;
+    margin: 0;
+    padding-bottom: 2rem;
+    width: 540px;
+    /* margin-top: 9rem; */
+}
+
+.our_story_photos {
+    padding-top: 3rem;
+}
+
+.story_images {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.story_image1 {
+    position: relative;
+    margin-left: 3rem;
+}
+
+.story_image2 {
+    margin-top: 3rem;
+}
+
+.story_fill {
+    position: absolute;
+    top: -44px;
+    right: -53px;
+}
+
+.our_story .main_para {
+    opacity: 70%;
+    font-family: var(--font-family);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: var(--secondary-color);
+    padding-top: 4rem;
+    width: 540px;
+    padding-left: 4.2rem;
+}
+
+
+.counter {
+    text-align: center;
+    /* padding: 0 9rem; */
+    margin: 7rem 0;
+}
+
+.figures {
+    text-align: center;
+    /* width: 310px; */
+}
+
+.figures h2 {
+    font-family: var(--font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: -1.7px;
+}
+
+.figures .main_para {
+    padding: 0 2rem;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+}
+
+/* ============================================= CHOOSE US ============================================= */
+
+.features {
+    background-color: #F4F7FA;
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+.features .features_fill {
+    position: absolute;
+    top: 8rem;
+}
+
+.features .sections_heading {
+    padding: 6rem 0;
+    width: 550px;
+    margin-left: calc(50% - 275px);
+}
+
+.features_blocks {
+    width: 950px;
+    margin-left: calc(50% - 460px);
+    padding-bottom: 8rem;
+    /* border-bottom: 3px solid red; */
+}
+
+.features_blocks .container {
+    padding: 0 3rem;
+}
+
+.features_content {
+    display: flex;
+    width: 410px;
+}
+
+.features_content img {
+    margin-right: 2rem;
+}
+
+.features_content h2 {
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    padding-bottom: 0.5rem;
+}
+
+.features_text p {
+    font-family: var(--font-family);
+    opacity: 70%;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: -0.2px;
+    color: var(--secondary-color);
+}
+
+.launch_project {
+    margin: 0 13rem;
+    padding-top: 6rem;
+    border-top: 1px solid var(--line-color);
+}
+
+.launch_project .project_text p {
+    font-family: var(--font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.24px;
+}
+
+.launch_project .container {
+    padding: 0;
+}
+
+.project_text {
+    width: 590px;
+}
+
+.project_text h2 {
+    letter-spacing: -0.9px;
+}
+
+.features_btn .main_btn {
+    margin-top: 1rem;
+}
+
+/* ============================================= CASE STUDIES ============================================= */
+
+.case_studies .sections_heading {
+    padding-bottom: 5rem;
+}
+
+.case_studies_gallery .case_context p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.12px;
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+.case_studies_gallery h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+}
+
+.case_studies_gallery {
+    position: relative;
+}
+
+.case_image {
+    width: 100%;
+}
+
+.case_image img {
+    width: 93%;
+}
+
+.case_image4 {
+    position: absolute;
+    top: 32.5rem;
+    right: 0;
+}
+
+.case_image4 img {
+    width: 66%;
+}
+
+.study_link {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.study_link a {
+    font-family: var(--font-family);
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.2px;
+    color: var(--button-bg);
+    text-decoration: none;
+}
+
+.study_link a i {
+    padding-left: 1rem;
+}
+
+/* ============================================= TESTIMONIAL 2 ============================================= */
+
+.testimonial_2 {
+    padding: 7rem 0;
+    background-color: var(--button-bg);
+    text-align: center;
+    position: relative;
+}
+
+.test_bg {
+    position: absolute;
+    top: 0;
+    left: 4rem;
+    /* width: 100%; */
+}
+
+.test_bg img {
+    width: 100%;
+}
+
+.testimonial_main_2 {
+    padding: 0 14rem;
+}
+
+.testimonial_main_2 .testimonial_2_info p {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1.625px;
+    text-align: center;
+    color: var(--green-color);
+}
+
+.testimonial_main_2 .testimonial_2_info h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -1.2px;
+    color: var(--white-color);
+    padding-bottom: 3rem;
+}
+
+.expert_img_2{
+    width: 100px;
+    margin-left: calc(50% - 50px);
+}
+
+.expert_2_info h2 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: -0.2px;
+    color: var(--white-color);
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.expert_2_info .main_para {
+    padding-top: 0;
+    color: var(--white-color);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.12px;
+}
+
+/* ============================================= FOOTER ============================================= */
+
+
+.footer {
+    background-color: #161C2D;
+    color: var(--white-color);
+    padding-bottom: 7rem;
+}
+
+
+.launch_project_2 {
+    margin: 0 13rem;
+    padding-bottom: 4rem;
+    margin-bottom: 6rem;
+    border-bottom: 1px solid var(--line-color);
+}
+
+.launch_project_2 .project_text p {
+    color: var(--white-color);
+}
+
+
+.footer .footer_first p {
+    color: var(--white-color);
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.1px;
+    padding-right: 6rem;
+    padding-top: 2rem;
+}
+
+.footer .footer_links_main h6 {
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.12px;
+    color: var(--white-color);
+    padding: 0;
+    margin: 0;
+}
+
+.social_icons_main {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.social_icons_main .icons a {
+    color: #7D818D;
+
+}
+
+.social_icons_main .icons a i {
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.social_icons_main .icons a i:hover {
+    color: var(--green-color);
+    transition: all 0.3s;
+}
+
+.footer_links_main {
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 3rem; */
+}
+
+.footer_links_main .footer_links {
+    padding-top: 2rem;
+}
+
+.footer_links_main .footer_links a {
+    font-family: var(--font-family);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -0.24px;
+    color: var(--white-color);
+    text-decoration: none;
+    display: block;
+}

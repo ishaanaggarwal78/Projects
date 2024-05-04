@@ -1,0 +1,63 @@
+@media (max-width:768px) {
+    .main_section .login_form {
+        width: 300px;
+        margin-left: calc(50% - 150px);
+        /* padding: 2rem 1rem; */
+    }
+
+    .main_section .login_form input[type="text"] {
+        width: 100%;
+    }
+
+    .main_section .ques_support {
+        padding: 4rem 2rem;
+    }
+
+    .main_section .ques_support a {
+        padding: 0;
+    }
+
+    .main_section .login_form input[type="checkbox"] {
+        margin: 0;
+    }
+}
+
+
+
+@media (max-width:426px) {
+    .main_section .ques_support {
+        padding: 4rem 6rem;
+        padding-top: 2rem;
+    }
+
+    .main_section .login_form input {
+        height: 40px;
+    }
+
+    .main_section .login_form .login_btn button {
+        width: 100%;
+        margin-top: 2rem;
+        height: 50px;
+    }
+
+}
+
+
+
+@media (max-width:376px) {
+    .main_section .ques_support {
+        padding: 4rem 5rem;
+        padding-top: 2rem;
+    }
+}
+
+
+
+@media (max-width:321px) {
+    .main_section .ques_support {
+        padding: 4rem 3rem;
+        padding-top: 2rem;
+    }
+
+
+}

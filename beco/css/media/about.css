@@ -1,0 +1,209 @@
+/* ============================================= PRE-DEFINED ============================================= */
+
+
+@media (max-width:376px) {
+    .sections .head_styling {
+        font-size: 1.8rem;
+        padding-top: 0.5rem;
+    }
+
+    .sections span {
+        font-size: 0.8rem;
+    }
+}
+
+/* ============================================= MAIN ============================================= */
+
+@media (max-width:1024px) {
+    .navbar2 {
+        padding: 0 2rem;
+    }
+
+    .navbar2::before {
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .navbar2 .menu_bar {
+        display: block;
+    }
+
+    .navbar2 .main_ul {
+        display: none;
+    }
+
+    .navbar2 .contact_btn button {
+        height: 3rem;
+        padding: 0 2rem;
+        font-size: 15px;
+    }
+
+    .about_section {
+        height: 80vh;
+    }
+
+    .about_section .main_head {
+        padding-top: 6rem;
+        width: 80%;
+        margin-left: calc(50% - 40%);
+    }
+}
+
+@media (max-width:426px) {
+    .navbar2 {
+        padding: 0 1.5rem;
+        height: 70px;
+    }
+
+    .navbar2 .logo {
+        width: 17%;
+        height: auto;
+    }
+
+    .about_section {
+        height: 60vh;
+    }
+
+    .about_section .main_head h1 {
+        font-size: 2.7rem;
+    }
+
+    .about_section .main_head p {
+        font-size: 1rem;
+    }
+
+}
+
+/* ============================================= SOLUTIONS ============================================= */
+
+@media (max-width:768px) {
+    .solutions .sections_head {
+        width: 80%;
+    }
+}
+
+@media (max-width:426px) {
+    .solutions {
+        padding-top: 1rem;
+    }
+
+    .solutions .sections_head {
+        width: 100%;
+    }
+}
+
+/* ============================================= CHOOSE US ============================================= */
+
+@media (max-width:768px) {
+    .choose_us_main .head_styling {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .choose_us_main .gallery .buttons {
+        margin-top: 2rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .choose_us_main .gallery .buttons button {
+        margin-top: 1rem;
+    }
+
+    .choose_us_main .choose_us_info {
+        margin-bottom: 1rem;
+    }
+
+    .choose_us_main .choose_us_info p {
+        font-size: 1rem;
+    }
+
+    .choose_us_main .choose_us_info li {
+        font-size: 0.9rem;
+        line-height: 35px;
+    }
+}
+
+/* ============================================= ASSISTANCE ============================================= */
+
+@media (max-width:768px) {
+    .assistance {
+        padding-top: 5.5rem;
+        margin-bottom: 0;
+    }
+
+    .assistance_info {
+        padding-left: 0;
+    }
+
+    .assistance h1 {
+        padding-bottom: 1rem;
+        padding-top: 3rem;
+    }
+
+    .assistance_details p {
+        font-size: 15px;
+    }
+
+    .assistance_details i {
+        padding-right: 1rem;
+    }
+}
+
+
+@media (max-width:768px) {
+    .assistance {
+        padding-top: 1.5rem;
+    }
+
+    .assistance h1 {
+        padding-bottom: 1rem;
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width:376px) {
+    .assistance h1 {
+        padding-bottom: 1rem;
+        padding-top: 1.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+/* ============================================= GET IN TOUCH ============================================= */
+
+@media (max-width:768px) {
+    .qoute_img {
+        width: 100%;
+    }
+
+    .qoute_inputs {
+        width: 100%;
+    }
+
+    .qoute_inputs input {
+        height: 2.7rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+@media (max-width:426px) {
+    .qoute_img img {
+        width: 90%;
+        margin-left: calc(50% - 45%);
+    }
+
+    .qoute_inputs {
+        margin-top: -4rem;
+    }
+}
+
+/* ============================================= NEWSLETTER ============================================= */
+
+@media (max-width:768px) {
+    .newsletter {
+        padding: 1rem 0;
+    }
+}

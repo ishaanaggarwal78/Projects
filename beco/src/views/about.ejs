@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css">    
+    <%- include('globals/header') %>
+</head>
+
+<body>
+    <%- include('globals/navbar2') %>
+
+        <!-- ============================================= SIDEBAR ============================================= -->
+
+        <%- include('globals/sidebar') %>
+
+            <!-- ============================================= MAIN SECTION ============================================= -->
+
+            <main>
+                <section class="about_section sections">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg">
+                                <div class="main_head">
+                                    <h1>ABOUT US</h1>
+                                    <p>At Beco, our team thrives on collaboration and a shared commitment to delivering
+                                        outstanding results for our clients. We are more than consultants.</p>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                </section>
+            </main>
+
+            <%- include('globals/about-us') %>
+
+
+                <!-- ============================================= SOLUTIONS ============================================= -->
+
+                <section class="solutions sections">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg">
+                                <div class="sections_head">
+                                    <span class="info_head">OUR SOLUTIONS</span>
+                                    <h2 class="head_styling">Let's embark on a journey of transformation together</h2>
+                                    <p>In the dynamic landscape of modern business, staying competitive and achieving
+                                        sustainable
+                                        success requires innovative solutions tailored to your unique challenges. Here's
+                                        an
+                                        in-depth
+                                        look at the solutions we offer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <% solutions.forEach((solution)=> { %>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="solutions_blocks">
+                                        <div class="solutions_icons">
+                                            <i class="<%- solution.icon %>"></i>
+                                        </div>
+                                        <div class="solutions_info">
+                                            <h2><%- solution.h2 %></h2>
+                                            <p><%- solution.p %></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <% }) %>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ============================================= CHOOSE US ============================================= -->
+
+                <section class="choose_us_main sections">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg">
+                                <span class="info_head">WHY CHOOSE US</span>
+                                <h2 class="head_styling">Let's shape a brighter future</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="gallery">
+                                <div class="buttons">
+                                    <!-- <button class="btn btn-default filter" data-filter=".all">Show All</button> -->
+                                    <!-- <button class="btn btn-default filter" data-filter=".item1">Pinks</button> -->
+                                    <button class="btn btn-default filter" data-filter=".item1">About us</button>
+                                    <button class="btn btn-default filter" data-filter=".item2">Our Mission</button>
+                                    <button class="btn btn-default filter" data-filter=".item3">Our Vision</button>
+                                </div>
+                                <div class="grid">
+                                    <div class="container">
+                                        <div class="row mix item1">
+                                            <div class="col-lg-6">
+                                                <div class="choose_us_info">
+                                                    <h2>Strategic Planning and Execution</h2>
+                                                    <p>Develop a clear, forward-thinking strategy and an actionable plan
+                                                        to
+                                                        drive
+                                                        your business forward. We analyze market trends, assess your
+                                                        competitive
+                                                        landscape, and guide you in implementing strategic.</p>
+
+                                                    <li><i class="fa-solid fa-check"></i>Tailored Solutions for Your
+                                                        Unique
+                                                        Needs</li>
+                                                    <li><i class="fa-solid fa-check"></i>Tailored Solutions for Your
+                                                        Unique
+                                                        Needs</li>
+                                                    <li><i class="fa-solid fa-check"></i>Tailored Solutions for Your
+                                                        Unique
+                                                        Needs</li>
+                                                    <button class="primary_btn">
+                                                        Read More
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="choose_us_img">
+                                                    <img src="img/about/choose-1.webp" alt="" class="img-fluid ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mix item2">
+                                            <div class="col-lg-6">
+                                                <div class="choose_us_info">
+                                                    <h2>Digital Transformation and Technology</h2>
+                                                    <p>Develop a clear, forward-thinking strategy and an actionable plan
+                                                        to
+                                                        drive
+                                                        your business forward. We analyze market trends, assess your
+                                                        competitive
+                                                        landscape, and guide you in implementing strategic.</p>
+
+                                                    <li><i class="fa-solid fa-check"></i>Tailored Solutions for Your
+                                                        Unique
+                                                        Needs</li>
+                                                    <li><i class="fa-solid fa-check"></i>Tailored Solutions for Your
+                                                        Unique
+                                                        Needs</li>
+                                                    <li><i class="fa-solid fa-check"></i>Tailored Solutions for Your
+                                                        Unique
+                                                        Needs</li>
+                                                    <button class="primary_btn">
+                                                        Read More
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="choose_us_img">
+                                                    <img src="img/about/choose-1.webp" alt="" class="img-fluid ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+
+
+                <!-- ============================================= ASSISTANCE ============================================= -->
+
+                <section class="assistance sections">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <swiper-container class="mySwiper" navigation="true">
+                                    <swiper-slide>
+                                        <img src="img\about\assistance-swipe-1.webp" alt="">
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <img src="img\about\assistance-swipe-2.webp" alt="">
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <img src="img\about\assistance-swipe-1.webp" alt="">
+                                    </swiper-slide><swiper-slide>
+                                        <img src="img\about\assistance-swipe-2.webp" alt="">
+                                    </swiper-slide>
+                                </swiper-container>
+                            </div>
+                            <div class="col-lg-6 pe-5 ">
+                                <div class="assistance_info">
+                                    <h1>We provide full assistance in your business</h1>
+                                    <div class="assistance_details">
+                                        <i class="fa-solid fa-angles-right"></i>
+                                        <p>We help you define your vision, set achievable goals, and create a customized
+                                            strategy. Through meticulous execution, we turn those plans into measurable
+                                            results.
+                                        </p>
+                                    </div>
+                                    <div class="assistance_details">
+                                        <i class="fa-solid fa-angles-right"></i>
+                                        <p>We help you define your vision, set achievable goals, and create a customized
+                                            strategy. Through meticulous execution, we turn those plans into measurable
+                                            results.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ============================================= GET IN TOUCH ============================================= -->
+
+                <section class="get_in_touch sections">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="qoute_img">
+                                    <img src="img/about/qoute-img.webp" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="qoute_inputs">
+                                    <span class="info_head">GET IN TOUCH</span>
+                                    <h2 class="head_styling">Get Started your Favourite Services</h2>
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <input type="text" name="name" placeholder="Your name" required>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input type="email" name="email" placeholder="Email" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <input type="text" name="name" placeholder="Your name" required>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input type="email" name="email" placeholder="Email" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <input type="textarea" name="message" placeholder="Message"
+                                                    class="textarea">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <button class="primary_btn">
+                                                    Get a Quote
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <%- include('globals/newsletter') %>
+
+
+                    <%- include('globals/footer') %>
+
+
+                        <%- include('globals/scripts') %>
+
+
+</body>
+
+</html>

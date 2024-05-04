@@ -1,0 +1,392 @@
+@media (max-width:1024px) {
+    .sections .sections_heading h1 {
+        font-size: 50px;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+
+    .menu_icon i {
+        padding: 0;
+        font-size: 20px;
+    }
+
+    .main_ul {
+        display: none;
+    }
+
+
+    nav {
+        padding: 0 8rem;
+    }
+
+    nav ul li {
+        padding: 0 1rem;
+        display: inline-block;
+    }
+
+    .main_section .sections_heading {
+        padding-top: 70px;
+    }
+
+    .main_image img {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .para_1 {
+        padding-top: 6rem;
+        padding-right: 3rem;
+    }
+
+    .main_section .head_2 h1 {
+        padding-top: 6rem;
+        font-size: 43px;
+        padding-right: 3rem;
+    }
+
+    .coders {
+        padding: 6rem 0;
+    }
+
+    .coders .coder_row img {
+        width: 9rem;
+        margin-bottom: 1rem;
+    }
+
+    .coders .coder_head {
+        padding-top: 0;
+    }
+
+    .team_info h6 {
+        font-size: 16px;
+    }
+
+    .team_info .main_para {
+        font-size: 13px;
+    }
+
+    .team_link {
+        padding-top: 6rem;
+        margin-left: 1rem;
+    }
+
+
+    .team_link h4 {
+        padding-bottom: 0;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .team_link a {
+        font-size: 14px;
+    }
+
+    .team_link a i {
+        padding-left: 0.5rem;
+    }
+
+    .footer_end .copyright p {
+        font-size: 15px;
+    }
+
+    .footer_end {
+        margin-top: 6rem;
+    }
+}
+
+/* ============================================= 768px ============================================= */
+
+@media (max-width:768px) {
+    /* .menu_icon {
+        display: block;
+    }
+
+    .menu_icon i {
+        padding: 0;
+        font-size: 20px;
+    }
+
+    .main_ul {
+        display: none;
+    } */
+
+    nav {
+        padding: 0 5rem;
+    }
+
+    nav ul li {
+        padding: 0 0.5rem;
+        display: inline-block;
+    }
+
+    .sections .sections_heading {
+        width: 80%;
+        margin-left: calc(50% - 40%);
+    }
+
+    .main_section .sections_heading .main_para {
+        padding-top: 1rem;
+    }
+
+    .main_section .head_2 h1 {
+        padding-top: 4rem;
+    }
+
+    .para_1 {
+        padding-top: 2rem;
+    }
+
+    .para_2 {
+        padding-bottom: 3rem;
+    }
+
+    .coders .coder_row img {
+        width: 14rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .coders .coder_head h1 {
+        padding-top: 4rem;
+    }
+
+    .coders .coder_head {
+        padding-top: 0;
+    }
+
+    .coders {
+        padding-bottom: 3rem;
+    }
+
+    .team_info h6 {
+        font-size: 18px;
+        padding-top: 1rem;
+    }
+
+    .team_info .main_para {
+        font-size: 13px;
+    }
+
+    .our_team {
+        padding: 4rem 0;
+    }
+
+    .team_link {
+        padding-top: 10rem;
+        margin-left: 3rem;
+    }
+
+    .team_link h4 {
+        letter-spacing: 0;
+        font-size: 26px;
+    }
+
+    .team_link a {
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+
+    .team_link a i {
+        padding-left: 0.5rem;
+    }
+
+    .footer {
+        padding-top: 3rem;
+    }
+
+    .footer_links_main {
+        padding-top: 3rem;
+    }
+
+    .footer_links_main .footer_links {
+        padding-top: 1rem;
+    }
+
+    .footer_end .copyright p {
+        font-size: 16px;
+        padding-bottom: 2rem;
+    }
+
+    .footer_end {
+        display: block;
+    }
+}
+
+/* ============================================= 425px ============================================= */
+
+@media (max-width:426px) {
+    .sections .container {
+        padding: 0 1rem;
+    }
+
+    .menu_bar_main {
+        width: 70%;
+        padding-left: 2rem;
+    }
+
+    .menu_bar .menu_ul li a {
+        font-size: 17px;
+    }
+
+    .close_btn i {
+        font-size: 24px;
+    }
+
+    .menu_btn button {
+        height: 40px;
+    }
+
+    nav {
+        padding: 0 1rem;
+    }
+
+    .main_section .sections_heading {
+        padding-top: 3rem;
+    }
+
+    .main_section .head_2 h1 {
+        font-size: 40px;
+        padding-top: 2rem;
+        line-height: 42px;
+    }
+
+    .coders .coder_row img {
+        width: 11rem;
+        margin-bottom: 1.5rem;
+        margin-left: 10px;
+    }
+
+    .coders .coder_head h1 {
+        padding-top: 4rem;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .our_team .sections_heading h1 {
+        font-size: 40px;
+    }
+
+    .team_images img {
+        margin-top: 1rem;
+        width: 80%;
+        margin-left: calc(50% - 40%);
+    }
+
+    .team_info {
+        padding-left: 2.5rem;
+    }
+
+    .team_link {
+        padding-top: 3rem;
+        margin-left: 3rem;
+    }
+
+    .our_team .team_link h4 {
+        letter-spacing: -0.3px;
+        font-size: 27px;
+        line-height: 30px;
+    }
+
+    .team_link a,
+    i {
+        font-size: 16px;
+        padding-top: 1rem;
+    }
+
+    .footer {
+        padding-top: 1rem;
+    }
+
+}
+
+/* ============================================= 375px ============================================= */
+
+@media (max-width:376px) {
+    .menu_bar .menu_ul li a {
+        font-size: 16px;
+    }
+
+    .menu_btn button {
+        font-size: 14px;
+    }
+
+    .sections .sections_heading .main_para {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .coders .coder_row img {
+        width: 10rem;
+        margin-bottom: 1.5rem;
+        margin-left: 10px;
+    }
+
+    .coders .coder_head h1 {
+        padding-top: 4rem;
+        font-size: 38px;
+        line-height: 50px;
+        padding-right: 1rem;
+    }
+
+    .our_team .team_link h4 {
+        letter-spacing: -0.8px;
+        font-size: 27px;
+        margin-left: 0;
+        line-height: 30px;
+    }
+
+    .social_icons_main .icons a i {
+        font-size: 18px;
+    }
+
+    .footer_end .copyright p {
+        font-size: 14px;
+        line-height: 14px;
+        padding-bottom: 1rem;
+    }
+
+}
+
+/* ============================================= 320px ============================================= */
+
+@media (max-width:321px) {
+    .sections .sections_heading h1 {
+        font-size: 40px;
+        margin: 0;
+        line-height: 43px;
+    }
+
+    .main_section .head_2 h1 {
+        font-size: 35px;
+        line-height: 38px;
+    }
+
+    .coders .coder_row img {
+        width: 8rem;
+        margin-bottom: 1rem;
+        margin-left: 10px;
+    }
+
+    .coders .coder_head h1 {
+        padding-top: 4rem;
+        font-size: 36px;
+        line-height: 40px;
+        padding-right: 1rem;
+    }
+
+    .our_team .sections_heading h1 {
+        padding-bottom: 2rem;
+    }
+
+    .team_info h6 {
+        font-size: 20px;
+        padding-top: 0.5rem;
+    }
+
+    .team_link {
+        padding-top: 3rem;
+        margin-left: 2rem;
+    }
+
+}

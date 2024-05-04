@@ -1,0 +1,310 @@
+:root {
+    --primary-color: rgb(93, 11, 111);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(214, 230, 255); */
+    background-color: red;
+}
+
+/* ============================================= HEADING ============================================= */
+
+.button_styling {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 8px 0;
+    color: white;
+    font-weight: 500;
+    border: none;
+    margin-top: 1rem;
+    transition: all ease-in-out 0.2s;
+    border: 1px solid var(--primary-color);
+}
+
+.sign_in button:hover {
+    background-color: white;
+    color: var(--primary-color);
+    transition: all ease-in-out 0.2s;
+    border: 1px solid var(--primary-color);
+}
+
+
+.main_box {
+    display: flex;
+    width: 65%;
+    height: 550px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 15px -4px rgba(0, 0, 0, 0.573);
+}
+
+.sign_in {
+    position: relative;
+    padding: 4rem 1.9rem;
+    padding-right: 2rem;
+    width: 50%;
+    overflow: hidden;
+}
+
+.signin_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    transition: all ease-in-out 0.6s;
+}
+
+.sign_in h1 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.sign_in .social_platform {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    margin: 1.3rem 0;
+}
+
+.social_platform .social_icons {
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.social_platform .social_icons:hover {
+    background-color: var(--primary-color);
+    transition: all ease-in-out 0.2s;
+    border: 2px solid var(--primary-color);
+    color: white;
+}
+
+form p {
+    text-align: center;
+}
+
+form input {
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 3rem;
+    margin-bottom: 1.2rem;
+    padding-left: 1rem;
+}
+
+
+form input::placeholder {
+    color: rgb(100, 100, 100);
+    font-weight: 500;
+}
+
+.forget_password {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.forget_password button {
+    width: 40%;
+}
+
+.forget_password a {
+    text-decoration: none;
+    color: grey;
+    font-size: 16px;
+}
+
+/* ============================================= HELLO ============================================= */
+
+
+.main_box {
+    position: relative;
+}
+
+.hello {
+    position: absolute;
+    top: 0;
+    margin-left: 50%;
+    background-color: var(--primary-color);
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 550px;
+    padding: 1rem 1.5rem;
+    width: 50%;
+    overflow: hidden;
+    z-index: 1;
+    transition: all ease-in-out 0.6s;
+}
+
+.hello_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    color: white;
+    transition: all ease-in-out 0.6s;
+}
+
+.hello .button_styling {
+    border: 1px solid white;
+    width: 35%;
+}
+
+.hello button:hover {
+    background-color: white;
+    color: var(--primary-color);
+    transition: all ease-in-out 0.2s;
+    border: 1px solid var(--primary-color);
+}
+
+.hello p {
+    font-size: 18px;
+}
+
+/* ============================================= HELLO ============================================= */
+
+.hello_box_left {
+    margin-left: 0;
+    transition: all ease-in-out 0.6s;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+
+.hello_content_right {
+    margin-left: 150%;
+    transition: all ease-in-out 0.6s;
+}
+
+.signin_right {
+    margin-left: 80%;
+    transition: all ease-in-out 0.6s;
+}
+
+/* ============================================= WELCOME ============================================= */
+
+.main_box {
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome_back {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    transition: all ease-in-out 0.6s;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    padding: 1rem 1.5rem;
+    width: 40%;
+    overflow: hidden;
+    margin-left: -50%;
+}
+
+.welcome_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    color: white;
+    /* color: black; */
+    transition: all ease-in-out 0.6s;
+}
+
+
+.welcome_back .button_styling {
+    border: 1px solid white;
+    width: 45%;
+}
+
+.welcome_back button:hover {
+    background-color: white;
+    color: var(--primary-color);
+    transition: all ease-in-out 0.2s;
+    border: 1px solid var(--primary-color);
+}
+
+.welcome_back p {
+    font-size: 18px;
+}
+
+.welcome_right {
+    margin-left: 0;
+    z-index: 2;
+    transition: all ease-in-out 0.6s;
+}
+
+/* .welcome_revert {
+    margin-left: 0;
+    transition: all ease-in-out 0.6s;
+    z-index: 2;
+} */
+
+
+/* ============================================= CREATE ACCOUNT ============================================= */
+
+.main_box {
+    position: relative;
+}
+
+.create_account {
+    position: relative;
+    padding: 4rem 1.9rem;
+    padding-right: 2rem;
+    width: 50%;
+    overflow: hidden;
+    /* margin-left: -30%; */
+}
+
+.create_content {
+    margin-left: -90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    transition: all ease-in-out 0.6s;
+}
+
+.create_right {
+    margin-left: 0;
+    transition: all ease-in-out 0.6s;
+}

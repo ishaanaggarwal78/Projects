@@ -1,0 +1,122 @@
+:root {
+    --font-color: #161C2D;
+    --button-bg: #473BF0;
+    --small-head: #F64B4B;
+    --secondary-color: #161C2D;
+    --line-color: #D5D7DD;
+    --green-color: #68D585;
+    --white-color: white;
+    --font-family: "DM Sans", sans-serif;
+    --bg-color: #F4F7FA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_section{
+    background-color: var(--bg-color);
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login_form {
+    width: 350px;
+    margin: 2rem;
+    margin-bottom: 4rem;
+    box-shadow: 0px 34px 20px -10px #161C2D21;
+    background-color: coral;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--line-color);
+    background-color: var(--white-color);
+    margin-left: calc(50% - 175px);
+}
+
+.login_form label {
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -0.12px;
+    color: var(--secondary-color);
+}
+
+.login_form input {
+    width: 299px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid var(--bg-color);
+    /* border: 1px solid red; */
+    margin-bottom: 1.5rem;
+    outline: none;
+    padding-left: 1rem;
+    color: grey;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.forgot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgot a {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.12px;
+    color: var(--button-bg);
+}
+
+.login_form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--bg-color);
+}
+
+.remember span{
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.12px;
+    color: var(--secondary-color);
+    padding-top: -1rem;
+    padding-left: 5px;
+}
+
+.login_form .login_btn button{
+    width: 100%;
+    margin-top: 2rem;
+    height: 60px;
+}
+
+.ques_support {
+    text-align: center;
+    padding-bottom: 7rem;
+}
+
+.ques_support span {
+    font-family: var(--font-family);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: -0.24px;
+    color: var(--secondary-color);
+}
+
+.ques_support span a {
+    color: var(--button-bg);
+    /* padding-left: 1rem; */
+    text-decoration: none;
+}

@@ -1,0 +1,63 @@
+@media (max-width:1024px) {
+    .main_section .pricing_blocks {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .main_section .pricing_faq {
+        margin-bottom: 0;
+        margin-top: 4rem;
+    }
+
+    .main_section .pricing_icon i {
+        padding-top: 0rem;
+    }
+}
+
+
+
+@media (max-width:426px) {
+    .main_section .ques_support {
+        padding: 4rem 6rem;
+    }
+
+}
+
+
+
+@media (max-width:376px) {
+    .main_section .pricing_blocks {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .main_section .pricing_faq {
+        margin-bottom: 0;
+        margin-top: 2rem;
+    }
+
+    .main_section .ques_support {
+        padding: 4rem 4rem;
+    }
+
+    .pricing_ans .main_para {
+        margin: 0;
+    }
+}
+
+
+@media (max-width:321px) {
+    .main_section .pricing_blocks {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .main_section .ques_support {
+        padding: 4rem 2rem;
+    }
+
+    .main_section .ques_support a {
+        padding: 0;
+    }
+
+}
