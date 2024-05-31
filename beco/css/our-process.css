@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #f23801;
+    --secondary-color: #f7e4d6;
+    --black-color: black;
+    --white-color: white;
+    --para-color: rgb(67, 67, 67);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+/* ============================================= PROCESS ============================================= */
+
+
+.our_process .process_start {
+    margin-top: 3rem;
+}
+
+.process_content {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.our_process .process_left,
+.our_process .process_right {
+    width: 90%;
+}
+
+.process_start .process_img {
+    /* height: 10%; */
+}
+
+.process_start .process_img img {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.our_process .process_right {
+    float: right;
+}
+
+.our_process .process_left {
+    float: left;
+}
+
+.our_process .process_text {
+    padding-top: 4rem;
+}
+
+.our_process .process_timeline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

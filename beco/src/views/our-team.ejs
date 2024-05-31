@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Our team</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="our-team.css">
+    <%- include('globals/header') %>
+</head>
+
+<body>
+    <%- include('globals/navbar2') %>
+
+        <!-- ============================================= SIDEBAR ============================================= -->
+
+        <%- include('globals/sidebar') %>
+
+            <!-- ============================================= MAIN SECTION ============================================= -->
+
+            <main>
+                <section class="about_section sections">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg">
+                                <div class="main_head">
+                                    <h1>OUR TEAM</h1>
+                                    <p>At Beco, we take pride in assembling a team of dedicated professionals who are
+                                        experts in their respective fields. Our team members bring a wealth of
+                                        experience, diverse skills, and a shared passion for driving success for our
+                                        clients.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+
+            <!-- ============================================= TEAM ============================================= -->
+
+            <section class="team_members sections">
+                <div class="container">
+                    <div class="row">
+                        <div class="members_head">
+                            <span class="info_head">OUR TEAM MEMBERS</span>
+                            <h1>Our team members bring a wealth of experience</h1>
+                            <p class="para_style">At Beco, our team thrives on collaboration and a shared commitment to
+                                delivering
+                                outstanding results for our clients. Meet the talented individuals who make up the core
+                                of our business consulting firm.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <% team.forEach((members)=> { %>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="team_main">
+                                    <div class="team_img">
+                                        <img src="img/<%- members.img %>.jpg" alt="" class="img-fluid ">
+                                    </div>
+                                    <div class="team_info">
+                                        <h3><%- members.h3 %></h3>
+                                        <p><%- members.p %></p>
+                                        <div class="team_social">
+                                            <a href="<%- members.fb %>"><i class="fa-brands fa-facebook"></i></a>
+                                            <a href="<%- members.insta %>"><i class="fa-brands fa-instagram"></i></a>
+                                            <a href="<%- members.linkedin %>"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="<%- members.x %>"><i class="fa-brands fa-x-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <% }) %>
+                    </div>
+                </div>
+                </section>
+
+                <section class="about_us sections">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="video_loop">
+                                    <img src="img/about.jpg" alt="" class="img-fluid">
+                                    <div class="about_play_btn">
+                                        <i class="fa-solid fa-play"></i>
+                                        <div class="outer_ring"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="about_us_info sections_head">
+                                    <span class="info_head">WORKFLOW</span>
+                                    <h2>Improve your business with the right solutions</h2>
+                                    <p>"At Beco, we believe that every business has the potential to thrive and
+                                        achieve greatness. We are a team of passionate and experienced professionals
+                                        committed to your success."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_overlay">
+                        <div class="yt_video">
+                            <iframe width="860" height="515"
+                                src="https://www.youtube.com/embed/IMxDeACOWCE?si=1qXjMTcVtmGcAmX7"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+
+            <!-- ============================================= HEADING ============================================= -->
+
+            <%- include('globals/newsletter') %>
+                <%- include('globals/footer') %>
+                    <%- include('globals/scripts') %>

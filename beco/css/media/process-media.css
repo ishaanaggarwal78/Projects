@@ -1,0 +1,10 @@
+@media (max-width:768px) {
+    .process_start .process_img {
+        margin-left: 5rem;
+    }
+
+    .our_process .process_timeline {
+        top: 40%;
+        left: 10%;
+    }
+}

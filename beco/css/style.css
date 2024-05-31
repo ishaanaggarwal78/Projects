@@ -80,6 +80,22 @@ body {
     padding: 1rem 0;
 }
 
+.para_style {
+    color: var(--para-color);
+}
+
+.centered_heading {
+    text-align: center;
+    width: 60%;
+    margin-left: calc(50% - 30%);
+    padding-top: 6rem;
+}
+
+.centered_heading h1{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
 /* ============================================= SIDEBAR ============================================= */
 
 .bg_overlay {

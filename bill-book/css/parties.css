@@ -208,14 +208,12 @@ ul li>a {
 .child_links li {
     width: 100%;
     line-height: 34px;
-    /* padding: 8px 0; */
-    /* margin-left: -40px; */
+
 }
 
 .child_links li a {
     padding: 0 10px;
     font-weight: 500;
-    /* border-radius: 20px; */
 }
 
 .child_links li:hover {
@@ -240,8 +238,8 @@ ul li>a {
 
 .child_links li a .fa-angle-right {
     float: right;
-    padding-top: 13px;
-    padding-right: 13px;
+    /* padding-top: 13px; */
+    /* padding-right: 13px; */
 }
 
 .scroll_options {

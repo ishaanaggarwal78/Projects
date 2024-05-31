@@ -51,6 +51,15 @@ app.get('/', function (req, res) {
             linkedin: 'emiley/linkedin.com',
             x: 'emiley/x.com'
         },
+        {
+            img: 'team-4',
+            h3: 'Emiley',
+            p: 'Advisor',
+            fb: "emiley/facebook.com",
+            insta: 'emiley/instagram.com',
+            linkedin: 'emiley/linkedin.com',
+            x: 'emiley/x.com'
+        },
     ];
     res.render('index', { services, team });
 });
@@ -92,8 +101,114 @@ app.get('/about', function (req, res) {
     res.render('about', { solutions });
 });
 
-app.get('/services', function(req, res){
+app.get('/services', function (req, res) {
     res.render('services');
+});
+
+app.get('/our-team', function (req, res) {
+
+    let team = [
+        {
+            img: 'team-1',
+            h3: 'Alexander',
+            p: 'CEO and Founder',
+            fb: "Alexander/facebook.com",
+            insta: 'Alexander/instagram.com',
+            linkedin: 'Alexander/linkedin.com',
+            x: 'Alexander/x.com'
+        },
+        {
+            img: 'team-2',
+            h3: 'Mishel',
+            p: 'Busines Expert',
+            fb: "mishel/facebook.com",
+            insta: 'mishel/instagram.com',
+            linkedin: 'mishel/linkedin.com',
+            x: 'mishel/x.com'
+        },
+        {
+            img: 'team-3',
+            h3: 'Emiley',
+            p: 'Advisor',
+            fb: "emiley/facebook.com",
+            insta: 'emiley/instagram.com',
+            linkedin: 'emiley/linkedin.com',
+            x: 'emiley/x.com'
+        },
+        {
+            img: 'team-4',
+            h3: 'Emiley',
+            p: 'Advisor',
+            fb: "emiley/facebook.com",
+            insta: 'emiley/instagram.com',
+            linkedin: 'emiley/linkedin.com',
+            x: 'emiley/x.com'
+        },
+        {
+            img: 'team-5',
+            h3: 'Emiley',
+            p: 'Advisor',
+            fb: "emiley/facebook.com",
+            insta: 'emiley/instagram.com',
+            linkedin: 'emiley/linkedin.com',
+            x: 'emiley/x.com'
+        },
+        {
+            img: 'team-6',
+            h3: 'Emiley',
+            p: 'Advisor',
+            fb: "emiley/facebook.com",
+            insta: 'emiley/instagram.com',
+            linkedin: 'emiley/linkedin.com',
+            x: 'emiley/x.com'
+        },
+    ];
+    res.render('our-team', { team });
+});
+
+app.get('/our-process', function (req, res) {
+    res.render('our-process');
+});
+
+app.get('/pricing-plans', function (req, res) {
+
+    let pricing = [
+        {
+            head: "Starter",
+            p: "Our team is carefully curated to ensure a diverse range of skills and experiences.",
+            price: "50",
+            duration: "month",
+            list1: "Personal Manager",
+            list2: "Customer Management",
+            list3: "Online Payments",
+            list4: "Basic Consultation"
+        },
+        {
+            head: "Team",
+            p: "We provide training, workshops, and resources to equip your organization.",
+            price: "60",
+            duration: "month",
+            list1: "Personal Manager",
+            list2: "Customer Management",
+            list3: "Online Payments",
+            list4: "Premium Consultation"
+        },
+        {
+            head: "Enterprise",
+            p: "We provide training, workshops, and resources to equip your organization.",
+            price: "120",
+            duration: "month",
+            list1: "Personal Manager",
+            list2: "Customer Management",
+            list3: "Client Portal",
+            list4: "Premium Consultation"
+        },
+    ];
+    res.render('pricing-plans', { pricing });
+});
+
+app.get('/contact-us', function (req, res) {
+    res.render('contact-us');
 });
 
 // app.get('/industries', function (req, res) {

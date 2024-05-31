@@ -1,0 +1,18 @@
+@media (max-width: 426px) {
+    .team_members .members_head {
+        width: 90%;
+        margin-left: calc(50% - 45%);
+    }
+
+    .team_members .team_main {
+        margin-bottom: 1rem;
+    }
+
+    .team_members .members_head h1 {
+        padding-top: 1rem;
+    }
+
+    .about_us {
+        padding-bottom: 0;
+    }
+}

@@ -1,0 +1,57 @@
+@media (max-width:1024px) {
+    .pricing_plans {
+        padding: 0;
+    }
+
+    .plans_head {
+        padding-top: 1rem;
+    }
+
+    .plans_head h1 {
+        padding-top: 1rem;
+    }
+
+    .plans_blocks li {
+        font-size: 15px;
+    }
+
+    .pricing_features .table_head1 {
+        height: 9rem;
+    }
+
+    .pricing_features .table_list1 {
+        padding: 1rem;
+    }
+
+    .pricing_features .table_head {
+        padding: 2rem 1rem;
+    }
+
+
+    .table_list {
+        border: 1px solid lightgray;
+        padding: 1rem 2rem;
+    }
+
+    .pricing_packs {
+        margin-bottom: -4rem;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .plans_head {
+        width: 90%;
+        margin-left: calc(50% - 45%);
+        padding-top: 2rem;
+    }
+
+    .pricing_plans{
+        margin-bottom: 3rem;
+    }
+
+    .pricing_plans .plans_blocks {
+        height: 95%;
+    }
+}

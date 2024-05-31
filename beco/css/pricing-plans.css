@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #f23801;
+    --secondary-color: #f7e4d6;
+    --black-color: black;
+    --white-color: white;
+    --para-color: rgb(67, 67, 67);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+/* ============================================= PRICING ============================================= */
+
+.about_section {
+    background: rgba(0, 0, 0, 0.7) url('https://assets-global.website-files.com/64f5753b4e82f3262cbb7e3d/64f5753b4e82f3262cbb7f4b_pexels-andrea.webp');
+    background-size: cover;
+}
+
+.pricing_plans .plans_blocks h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.pricing_plans h1 span {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.pricing_plans h1 sup {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.pricing_plans .plans_blocks {
+    background-color: var(--secondary-color);
+    padding: 3rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    height: 90%;
+}
+
+.plans_blocks button {
+    width: 100%;
+    margin-bottom: 1rem;
+    /* margin-top: 1rem; */
+}
+
+.plans_blocks li {
+    padding-bottom: 1rem;
+    font-size: 17px;
+    padding-left: 1rem;
+    font-weight: 500;
+}
+
+.plans_blocks li::marker {
+    color: var(--primary-color);
+}
+
+/* ============================================= PRICING TABLE ============================================= */
+
+.pricing_table {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.pricing_features .table_head {
+    padding: 3rem;
+    text-align: center;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.pricing_features .table_head h1 {
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.pricing_features .table_head1 {
+    padding: 4rem 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.pricing_features .table_head1 h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 13px;
+    color: black;
+}
+
+.pricing_features .table_head h4 {
+    margin: 0;
+    font-weight: 400;
+}
+
+
+
+.pricing_features .table_list1 li {
+    list-style: disc;
+    text-align: left;
+}
+
+.pricing_features .table_list1 li::marker {
+    color: var(--primary-color);
+}
+
+.table_list {
+    border: 1px solid lightgray;
+    padding: 1rem 3rem;
+}
+
+.table_list1 {
+    border: none;
+}
+
+.table_list li {
+    padding: 1rem 0;
+    text-align: center;
+    list-style: none;
+    color: var(--para-color);
+    border-bottom: 1px solid lightgray;
+}
+
+.table_list li i {
+    color: var(--primary-color);
+}
+
+.pricing_packs .table_list li:last-child {
+    border-bottom: none;
+    margin-top: 2rem;
+}
+
+.pricing_packs {
+    transition: all 0.3s;
+}
+
+.pricing_packs:hover {
+    box-shadow: 0 0 20px 5px lightgray;
+    transition: all 0.3s;
+}

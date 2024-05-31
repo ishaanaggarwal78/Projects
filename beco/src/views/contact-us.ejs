@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact-us.css">
+    <%- include('globals/header') %>
+</head>
+
+<body>
+    <%- include('globals/navbar2') %>
+
+        <!-- ============================================= SIDEBAR ============================================= -->
+
+        <%- include('globals/sidebar') %>
+
+            <!-- ============================================= MAIN SECTION ============================================= -->
+
+            <main>
+                <section class="about_section sections">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg">
+                                <div class="main_head">
+                                    <h1>CONTACT US</h1>
+                                    <p>Contact Beco Consulting today, and let's embark on a transformative partnership
+                                        that paves the way for unparalleled success.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- ============================================= GET IN TOUCH ============================================= -->
+
+            <section class="contact_form sections">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="contact_form_left">
+                                <div class="info_head">GET IN TOUCH</div>
+                                <h4 class="head_styling">Contact our support team to grow your business</h4>
+                                <p>Contact Beco today and discover how our expertise can turn your vision into reality.
+                                    Together, let's build a future of excellence for your business.</p>
+                                <div class="contact_details">
+                                    <li>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <a href="">83 Third Ave, London W10 4HU, UK</a href="">
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-phone"></i>
+                                        <a href="">+1 212 425 8617</a href="">
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <a href="">information@gmail.com</a href="">
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="contact_form_right">
+                                <h5>Get Started with your Favorite Services
+                                    <form action="">
+                                        <input type="text" name="name" placeholder="Your name">
+                                        <input type="email" name="email" placeholder="Your email">
+                                        <select name="" id="services_list">
+                                            <option value="">Service</option>
+                                            <option value="">Strategic Planning</option>
+                                            <option value="">Competitive Analysis</option>
+                                            <option value="">Development</option>
+                                            <option value="">Marketing</option>
+                                        </select>
+                                        <textarea name="" id="" placeholder="Your Text"></textarea>
+                                        <button class="primary_btn">
+                                            Submit
+                                        </button>
+                                    </form>
+
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <%- include ('globals/newsletter') %>
+                <%- include ('globals/footer') %>
+            <%- include ('globals/scripts') %>

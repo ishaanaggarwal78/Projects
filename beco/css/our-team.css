@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #f23801;
+    --secondary-color: #f7e4d6;
+    --black-color: black;
+    --white-color: white;
+    --para-color: rgb(67, 67, 67);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+/* ============================================= TEAM MEMBERS ============================================= */
+
+.team_members {
+    padding-top: 6rem;
+    background-color: var(--secondary-color);
+}
+
+.team_members .members_head {
+    text-align: center;
+    width: 60%;
+    margin-left: calc(50% - 30%);
+}
+
+.team_members .members_head h1 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.team_members .team_main {
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.team_members .about_us {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    background-color: var(--white-color);
+}

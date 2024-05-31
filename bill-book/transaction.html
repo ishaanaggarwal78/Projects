@@ -44,10 +44,11 @@
                         <a href="dashboard.html" id="dashboard"><i class='bx bxs-dashboard'></i>Dashboard</a>
                     </li>
                     <li>
-                        <a href="parties.html" class="main_link active" id="parties"><i class="bi bi-people"></i>Parties</a>
+                        <a href="parties.html" class="main_link active" id="parties"><i
+                                class="bi bi-people"></i>Parties</a>
                     </li>
                     <li>
-                        <a href="#" id="parties"><i class="bi bi-credit-card-2-front"></i>Due Payment</a>
+                        <a href="due-payment.html" id="parties"><i class="bi bi-credit-card-2-front"></i>Due Payment</a>
                     </li>
                     <li>
                         <a href="#" id="items"><i class="bi bi-box-seam"></i>Items
@@ -227,9 +228,20 @@
                 </div>
 
                 <div class="create_box mt-2">
-                    <i class='bx bxs-report report'></i>
+                    <!-- <i class='bx bxs-report report'></i>
                     <input type="search" name="search" id="search" placeholder="Create Sales Invoice">
-                    <i class="fa-solid fa-angle-down down"></i>
+                    <i class="fa-solid fa-angle-down down"></i> -->
+
+                    <!-- <div class="editing_box"> -->
+                    <button class="edit top_btns new_trans_btn">
+                        New transaction
+                    </button>
+                    <!-- </div> -->
+
+                    <!-- <div class="pdf">
+                        <i class="bi bi-filetype-pdf"></i>
+                        Download PDF
+                    </div> -->
                 </div>
 
                 <div class="editing_box d-flex ms-5">
@@ -313,7 +325,8 @@
                                 <i class="fa-solid fa-angle-up me-4"></i>
                                 <i class="fa-solid fa-angle-down me-4"></i>
                             </th>
-                            <th>Status</th>
+                            <th>Balance</th>
+                            <th>Download PDF</th>
                         </tr>
                         <tr class="card-body ">
                             <td>28-Apr-2023</td>
@@ -321,8 +334,14 @@
                             <td>18</td>
                             <td>&#8377;25,000(&#8377;20,000 unpaid)</td>
                             <td>
-                                <div class="partial_paid">
-                                    <span>Partial Paid</span>
+                                <!-- <div class="partial_paid"> -->
+                                40,000
+                                <!-- </div> -->
+                            </td>
+                            <td>
+                                <div class="pdf">
+                                    <i class="bi bi-filetype-pdf"></i>
+                                    Download PDF
                                 </div>
                             </td>
                         </tr>
@@ -338,44 +357,44 @@
     <script defer src="activePage.js"></script>
     <script>
         // ===========================ACTIVE-LINKS(MAIN-LINKS)=============================
-    
+
         let mainLinks = document.querySelectorAll('.main_link');
-    
+
         mainLinks.forEach(mainLink => {
             mainLink.addEventListener('click', function () {
                 document.querySelector('.active')?.classList.remove('active');
                 mainLink.classList.add('active');
             });
         });
-    
+
         let activePage = window.location.pathname;
         let asideLinks = document.querySelectorAll('.main_link');
-    
+
         asideLinks.forEach(link => {
             if (link.href.includes(`${activePage}`)) {
                 link.classList.add('active');
             };
         });
-    
+
         // ===========================ACTIVE-LINKS(HEAD-LINKS)=============================
-    
+
         let activeLinks = document.querySelectorAll('.link');
-    
+
         activeLinks.forEach(headLink => {
             headLink.addEventListener('click', function () {
                 document.querySelector('.active')?.classList.remove('active');
                 headLink.classList.add('active');
             });
         });
-    
+
         let headLinks = document.querySelectorAll('.head_links a');
-    
+
         headLinks.forEach(link => {
             if (link.href.includes(`${activePage}`)) {
                 link.classList.add('active');
             };
         });
-    
+
     </script>
 
 </body>

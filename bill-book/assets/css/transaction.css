@@ -347,9 +347,9 @@ span {
 }
 
 .create_box {
-    width: 38%;
+    width: 18%;
     position: relative;
-    margin-bottom: 2px;
+    /* margin-bottom: 2px; */
 }
 
 .create_box #search {
@@ -405,6 +405,18 @@ span {
     font-size: 13px;
     border: 1px solid lightgray;
 }
+
+.new_trans_btn {
+    background-color: transparent;
+    color: #555555a6;
+    font-weight: 500;
+    height: 36px;
+    border-radius: 5px;
+    font-size: 13px;
+    border: 1px solid lightgray;
+    width: 100%;
+}
+
 
 .head_link {
     display: flex;
@@ -608,4 +620,30 @@ td span {
     padding: 3px 5px;
     border-radius: 7px;
     color: goldenrod;
+}
+
+/* ================================================PDF===================================================  */
+
+.pdf {
+    width: 110px;
+    height: 30px;
+    border: 1px solid darkgreen;
+    border-radius: 7px;
+    color: #555;
+    font-size: 12px;
+    font-weight: 500;
+    color: darkgreen;
+    padding: 3px 4px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.pdf i {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.pdf:hover {
+    background-color: darkgreen;
+    color: #fff;
 }

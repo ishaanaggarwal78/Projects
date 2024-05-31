@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pricing Plans</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="pricing-plans.css">
+    <%- include('globals/header') %>
+</head>
+
+<body>
+    <%- include('globals/navbar2') %>
+
+        <!-- ============================================= SIDEBAR ============================================= -->
+
+        <%- include('globals/sidebar') %>
+
+            <!-- ============================================= MAIN SECTION ============================================= -->
+
+            <main>
+                <section class="about_section sections">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg">
+                                <div class="main_head">
+                                    <h1>PRICING PLANS</h1>
+                                    <p>At Beco, our team thrives on collaboration and a shared commitment to delivering
+                                        outstanding results for our clients. We are more than consultants.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+
+            <!-- ============================================= PRICING ============================================= -->
+
+            <section class="pricing_plans sections">
+                <div class="container">
+                    <div class="row">
+                        <div class="plans_head centered_heading">
+                            <h1>Pricing that suits your needs</h1>
+                            <p class="para_style">Our comprehensive range of senior care services is designed to address
+                                the diverse needs of older adults. We believe in treating our clients with dignity,
+                                respect, and empathy, fostering a sense of trust.</p>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex justify-content-center">
+                        <% pricing.forEach((price)=> { %>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="plans_blocks">
+                                    <h2><%- price.head %></h2>
+                                    <p class="para_styling"><%- price.p %></p>
+                                    <h1><sup>$</sup><%- price.price %><span>/<%- price.duration %></span></h1>
+                                    <button class="primary_btn">
+                                        Buy Now
+                                    </button>
+                                    <li><%- price.list1 %></li>
+                                    <li><%- price.list2 %></li>
+                                    <li><%- price.list3 %></li>
+                                    <li><%- price.list4 %></li>
+                                </div>
+                            </div>
+                            <% }) %>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================= FEATURES ============================================= -->
+
+            <sectiion class="pricing_features sections">
+                <div class="container">
+                    <div class="row">
+                        <div class="plans_head centered_heading">
+                            <span class="info_head">COMPARING TABLE</span>
+                            <h1>Compare pricing plans to find the best service</h1>
+                            <p class="para_style">Innovation is the cornerstone of our team's philosophy. We think
+                                outside the box, bringing fresh perspectives to the forefront of our strategies.</p>
+                        </div>
+                    </div>
+
+                    <div class="pricing_table">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="pricing_features">
+                                    <div class="table_head table_head1">
+                                        <h1>Features</h1>
+                                    </div>
+                                    <div class="table_list table_list1">
+                                        <li>Users</li>
+                                        <li>Personal Manager</li>
+                                        <li>Premium supports</li>
+                                        <li>Customer Management</li>
+                                        <li>Statistics and tracking</li>
+                                        <li>Basic Consultation</li>
+                                        <li>Online Payments</li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="pricing_features pricing_packs">
+                                    <div class="table_head">
+                                        <h1>Basic</h1>
+                                        <h4>Starter</h4>
+                                    </div>
+                                    <div class="table_list">
+                                        <li>Up to 20 Users</li>
+                                        <li>6 month</li>
+                                        <li><i class="fa-solid fa-check"></i></li>
+                                        <li><i class="fa-solid fa-subtract"></i></li>
+                                        <li><i class="fa-solid fa-subtract"></i></li>
+                                        <li>30 min</li>
+                                        <li><i class="fa-solid fa-check"></i></li>
+                                        <li><button class="primary_btn">Purchase</button></li>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="pricing_features pricing_packs">
+                                    <div class="table_head">
+                                        <h1>Advanced</h1>
+                                        <h4>Team</h4>
+                                    </div>
+                                    <div class="table_list">
+                                        <li>Up to 20 Users</li>
+                                        <li>6 month</li>
+                                        <li><i class="fa-solid fa-check"></i></li>
+                                        <li><i class="fa-solid fa-subtract"></i></li>
+                                        <li><i class="fa-solid fa-subtract"></i></li>
+                                        <li>30 min</li>
+                                        <li><i class="fa-solid fa-check"></i></li>
+                                        <li><button class="primary_btn">Purchase</button></li>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="pricing_features pricing_packs">
+                                    <div class="table_head">
+                                        <h1>Premium</h1>
+                                        <h4>Enterprice</h4>
+                                    </div>
+                                    <div class="table_list">
+                                        <li>Up to 20 Users</li>
+                                        <li>6 month</li>
+                                        <li><i class="fa-solid fa-check"></i></li>
+                                        <li><i class="fa-solid fa-subtract"></i></li>
+                                        <li><i class="fa-solid fa-subtract"></i></li>
+                                        <li>30 min</li>
+                                        <li><i class="fa-solid fa-check"></i></li>
+                                        <li><button class="primary_btn">Purchase</button></li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </sectiion>
+
+
+            <!-- ============================================= HEADING ============================================= -->
+
+            <%- include('globals/newsletter') %>
+                <%- include('globals/footer') %>
+                    <%- include('globals/scripts') %>

@@ -1,0 +1,56 @@
+.main_content{
+    overflow: auto;
+}
+
+
+/* ============================================= TABULAR DATA ============================================= */
+
+.tabular_data {
+    width: 100%;
+    /* overflow: auto; */
+}
+
+.tabular_data table {
+    width: 100%;
+    border: none;
+    border: 1px solid var(--border-color);
+}
+
+.tabular_data table tr {
+    width: 100%;
+}
+
+.tabular_data table .card-header:hover {
+    background-color: rgb(0, 0, 0, 0.01);
+    cursor: auto;
+}
+
+.tabular_data table tr:hover {
+    background-color: rgb(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.tabular_data table tr th {
+    border-right: 1px solid var(--border-color);
+    font-size: 13px;
+    padding: 0.5rem 1rem;
+    background-color: #e7e9ed80;
+    border-bottom: 1px solid var(--border-color);
+    /* padding-right: 11rem; */
+}
+
+.tabular_data table tr td {
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    color: rgb(99, 99, 99);
+    font-size: 13px;
+    padding: 0.5rem 1rem;
+    overflow: auto;
+}
+
+.tabular_data table tr td .fa-arrow-down {
+    color: var(--green-color);  
+}
+.tabular_data table tr td .fa-arrow-up {
+    color: red;  
+}

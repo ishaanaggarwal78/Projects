@@ -1,0 +1,73 @@
+/* ============================================= GET IN TOUCH ============================================= */
+
+@media (max-width: 1024px) {
+    .contact_form {
+        margin-top: 2rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .contact_form_left .head_styling {
+        letter-spacing: -1px;
+        line-height: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contact_form {
+        margin-top: 0;
+    }
+
+    .contact_form_left {
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .contact_form_left .head_styling {
+        letter-spacing: 0;
+    }
+}
+
+
+@media (max-width: 426px) {
+    .contact_form_left .head_styling {
+        letter-spacing: -1px;
+    }
+
+    .contact_form_right {
+        padding: 2rem 1.5rem;
+    }
+    .contact_form_right input{
+        height: 3rem;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .about_section .main_head h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact_form {
+        margin-top: 0;
+    }
+
+    .contact_form_left {
+        padding-top: 0;
+        padding-right: 0;
+    }
+
+    .contact_form_left .head_styling {
+        letter-spacing: 0px;
+        line-height: 40px;
+    }
+
+    .contact_form_right {
+        margin-top: 2rem;
+    }
+
+    .contact_form_right h5 {
+        font-size: 1.7rem;
+    }
+}
